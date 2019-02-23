@@ -96,28 +96,18 @@ Wire Wire Line
 Wire Wire Line
 	5300 1200 5350 1200
 Connection ~ 5300 1150
-Wire Wire Line
-	6350 1300 6550 1300
-Wire Wire Line
-	6350 1400 6550 1400
-Wire Wire Line
-	6350 1500 6550 1500
-Wire Wire Line
-	6350 1600 6550 1600
 Text Label 6350 1300 0    60   ~ 0
-P0.31
+P0.30
 Text Label 6350 1400 0    60   ~ 0
-P0.29
+P0.31
 Text Label 6350 1500 0    60   ~ 0
-P0.02
+P0.29
 Text Label 6350 1600 0    60   ~ 0
-P1.13
-Wire Wire Line
-	5350 1500 5150 1500
+P0.02
 Text Label 6350 2000 0    60   ~ 0
 P1.11
-Text Label 5150 1500 0    60   ~ 0
-P1.00
+Text Label 5350 1500 2    60   ~ 0
+P0.20
 $Comp
 L nrfmicro-rescue:USB_OTG J1
 U 1 1 5B116606
@@ -202,8 +192,6 @@ Wire Wire Line
 	1700 6500 1050 6500
 Connection ~ 1050 6500
 Wire Wire Line
-	2000 6300 2000 6250
-Wire Wire Line
 	3150 6850 3850 6850
 $Comp
 L nrfmicro-rescue:VCC #PWR016
@@ -234,7 +222,7 @@ Wire Notes Line
 	500  5950 4500 5950
 Wire Notes Line
 	4500 5950 4500 7800
-Text Notes 2650 6250 0    60   ~ 0
+Text Notes 3350 6200 0    60   ~ 0
 Power and Filtering
 Wire Wire Line
 	8600 850  9000 850 
@@ -284,11 +272,11 @@ F 3 "" H 10650 2450 50  0001 C CNN
 $EndComp
 NoConn ~ 8200 1450
 Text Notes 7550 7500 0    60   ~ 0
-BlueMicro V2.0
+nrfmicro
 Text Notes 8250 7650 0    60   ~ 0
-June 18, 2018
+Feb24, 2019
 Text Notes 10650 7650 0    60   ~ 0
-2.0
+1.0
 Wire Wire Line
 	5300 1150 5300 1200
 Wire Wire Line
@@ -347,7 +335,7 @@ U 1 1 5C7015F9
 P 1850 5150
 F 0 "R1" V 2057 5150 50  0000 C CNN
 F 1 "1K" V 1966 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 5150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 5150 50  0001 C CNN
 F 3 "~" H 1850 5150 50  0001 C CNN
 	1    1850 5150
 	0    -1   -1   0   
@@ -521,28 +509,18 @@ Text GLabel 3750 4800 2    60   Input ~ 0
 VBAT
 Text GLabel 950  6250 0    60   Input ~ 0
 VBUS
-Text GLabel 1900 6250 0    60   Input ~ 0
+Text GLabel 3000 6350 2    60   Input ~ 0
 VBAT
-Text Label 5150 2000 0    60   ~ 0
-P0.10
-Text Label 5150 1900 0    60   ~ 0
+Text Label 5350 2000 2    60   ~ 0
 P1.06
-Text Label 5150 1800 0    60   ~ 0
+Text Label 5350 1900 2    60   ~ 0
+P0.10
+Text Label 5350 1800 2    60   ~ 0
 P0.09
-Text Label 5150 1700 0    60   ~ 0
-P1.04
-Text Label 5150 1600 0    60   ~ 0
-P1.02
-Wire Wire Line
-	5350 2000 5150 2000
-Wire Wire Line
-	5350 1900 5150 1900
-Wire Wire Line
-	5350 1800 5150 1800
-Wire Wire Line
-	5350 1700 5150 1700
-Wire Wire Line
-	5350 1600 5150 1600
+Text Label 5350 1700 2    60   ~ 0
+P0.24
+Text Label 5350 1600 2    60   ~ 0
+P0.13
 Text Label 1650 2550 2    60   ~ 0
 P0.08
 Text Label 1650 3150 2    60   ~ 0
@@ -694,7 +672,7 @@ Text Label 1650 1950 2    60   ~ 0
 P0.30
 Text Label 1650 1350 2    60   ~ 0
 P0.28
-Text GLabel 10000 2000 0    60   Input ~ 0
+Text GLabel 10400 2100 0    60   Input ~ 0
 VBAT
 Wire Wire Line
 	1250 2250 1250 2300
@@ -808,12 +786,6 @@ Wire Wire Line
 	2050 5350 2150 5350
 Wire Wire Line
 	2550 5550 1300 5550
-Wire Wire Line
-	6350 1900 6650 1900
-Wire Wire Line
-	6350 1700 6650 1700
-Wire Wire Line
-	6650 1800 6350 1800
 Text GLabel 5050 1000 0    60   Input ~ 0
 RXD
 Text GLabel 5050 900  0    60   Input ~ 0
@@ -822,25 +794,17 @@ Wire Wire Line
 	5350 1000 5050 1000
 Wire Wire Line
 	5050 900  5350 900 
-Wire Wire Line
-	5050 1300 5350 1300
-Wire Wire Line
-	5050 1400 5350 1400
-Text GLabel 5050 1400 0    60   Input ~ 0
-SCL
-Text GLabel 5050 1300 0    60   Input ~ 0
-SDA
-Text Label 5150 1300 0    60   ~ 0
-P0.22
-Text Label 5150 1400 0    60   ~ 0
-P0.24
+Text Label 5350 1300 2    60   ~ 0
+P0.15
+Text Label 5350 1400 2    60   ~ 0
+P0.17
 Text Label 6350 1700 0    60   ~ 0
-P0.28
+P1.13
 Text Label 6350 1900 0    60   ~ 0
-P1.10
+P0.28
 Text Label 6350 1800 0    60   ~ 0
 P0.03
-Text GLabel 3750 2450 2    60   Input ~ 0
+Text GLabel 3300 1850 2    60   Input ~ 0
 SWO
 Wire Wire Line
 	1650 3050 1350 3050
@@ -853,19 +817,13 @@ P0.06
 Text Notes 4200 3350 0    60   ~ 0
 Existing pins:\n\nP0.02 P0.03 P0.04 P0.05 P0.06 P0.07 P0.08 P0.09\nP0.10 P0.12 P0.13 P0.15 P0.17 P0.18\nP0.20 P0.22 P0.24 P0.26 P0.28 P0.29\nP0.30 P0.31\n\nP1.00 P1.02 P1.04 P1.06 P1.09\nP1.10 P1.11 P1.13\n\n
 Text Notes 6750 3250 0    60   ~ 0
-Feather pins:\n\nP1.15 LED1 x\nP1.10 LED2\nP0.15 BTN1\nP0.19 BTN2 x\nP0.16 NEOPIXEL x\nP0.08 RX\nP0.06 TX\n
-Text GLabel 6650 1800 2    60   Input ~ 0
-MISO
-Text GLabel 6650 1700 2    60   Input ~ 0
-SCK
-Text GLabel 6650 1900 2    60   Input ~ 0
-MOSI
+Feather pins:\n\nP1.15 LED1 x\nP1.10 LED2\nP0.15 BTN1\nP0.19 BTN2 x\nP0.16 NEOPIXEL x\nP0.08 RX\nP0.06 TX\n\nP1.02 DFU\nP0.18 RESET\n
 Text Label 3000 1650 0    60   ~ 0
 P1.02
 Wire Wire Line
-	3000 2450 3750 2450
+	3000 1850 3300 1850
 Text GLabel 1300 1150 0    60   Input ~ 0
-LED2
+BLUE_LED
 Wire Wire Line
 	1650 1150 1300 1150
 Wire Wire Line
@@ -889,8 +847,6 @@ Wire Wire Line
 Wire Wire Line
 	950  6250 1050 6250
 Wire Wire Line
-	1900 6250 2000 6250
-Wire Wire Line
 	3850 7350 3850 7400
 $Comp
 L Connector_Generic:Conn_01x04 J3
@@ -912,37 +868,84 @@ SWO
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5CB2FC09
-P 10200 2000
-F 0 "SW1" H 10200 2285 50  0000 C CNN
-F 1 "SW_SPDT" H 10200 2194 50  0000 C CNN
-F 2 "nrfmicro:switch_MSK-12C02_smd" H 10200 2000 50  0001 C CNN
-F 3 "" H 10200 2000 50  0001 C CNN
-	1    10200 2000
-	1    0    0    -1  
+P 2800 6350
+F 0 "SW1" H 2800 6650 50  0000 C CNN
+F 1 "SW_SPDT" H 2800 6550 50  0000 C CNN
+F 2 "nrfmicro:switch_MSK-12C02_smd" H 2800 6350 50  0001 C CNN
+F 3 "" H 2800 6350 50  0001 C CNN
+	1    2800 6350
+	-1   0    0    -1  
 $EndComp
-NoConn ~ 10400 1900
+Text GLabel 3300 1650 2    60   Input ~ 0
+DFU
+Wire Wire Line
+	3000 1650 3300 1650
+Text GLabel 2700 4100 0    60   Input ~ 0
+BLUE_LED
+$Comp
+L Device:R R5
+U 1 1 5C73A719
+P 3150 4100
+F 0 "R5" V 3357 4100 50  0000 C CNN
+F 1 "1K" V 3266 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4100 50  0001 C CNN
+F 3 "~" H 3150 4100 50  0001 C CNN
+	1    3150 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5C73ECD6
+P 3300 4100
+F 0 "#PWR0111" H 3300 3850 50  0001 C CNN
+F 1 "GND" H 3305 3927 50  0000 C CNN
+F 2 "" H 3300 4100 50  0001 C CNN
+F 3 "" H 3300 4100 50  0001 C CNN
+	1    3300 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C7545DA
+P 2850 4100
+F 0 "D3" H 2842 3845 50  0000 C CNN
+F 1 "LED" H 2842 3936 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2850 4100 50  0001 C CNN
+F 3 "~" H 2850 4100 50  0001 C CNN
+	1    2850 4100
+	-1   0    0    1   
+$EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5C72844F
-P 4400 2100
-F 0 "JP1" H 4400 2305 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4400 2214 50  0000 C CNN
-F 2 "nrfmicro:jumper" H 4400 2100 50  0001 C CNN
-F 3 "~" H 4400 2100 50  0001 C CNN
-	1    4400 2100
+P 1500 4100
+F 0 "JP1" H 1500 4305 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1500 4214 50  0000 C CNN
+F 2 "nrfmicro:jumper" H 1500 4100 50  0001 C CNN
+F 3 "~" H 1500 4100 50  0001 C CNN
+	1    1500 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5C72CA36
-P 4550 2100
-F 0 "#PWR0110" H 4550 1850 50  0001 C CNN
-F 1 "GND" H 4555 1927 50  0000 C CNN
-F 2 "" H 4550 2100 50  0001 C CNN
-F 3 "" H 4550 2100 50  0001 C CNN
-	1    4550 2100
+P 1650 4100
+F 0 "#PWR0110" H 1650 3850 50  0001 C CNN
+F 1 "GND" H 1655 3927 50  0000 C CNN
+F 2 "" H 1650 4100 50  0001 C CNN
+F 3 "" H 1650 4100 50  0001 C CNN
+	1    1650 4100
 	0    -1   -1   0   
 $EndComp
-Text Label 4250 2100 2    60   ~ 0
-P0.26
+Text GLabel 1350 4100 0    60   Input ~ 0
+DFU
+NoConn ~ 2600 6250
+Wire Wire Line
+	2000 6300 2000 6250
+Wire Wire Line
+	2000 6250 2500 6250
+Wire Wire Line
+	2500 6250 2500 6450
+Wire Wire Line
+	2500 6450 2600 6450
 $EndSCHEMATC
