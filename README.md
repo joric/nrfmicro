@@ -27,9 +27,9 @@ Supposed to be used with a modified Adafruit Feather nRF52840 Express bootloader
 
 #### Pictures
 
-![](front.png)
+![](images/nrfmicro-0.1-front.png)
 
-![](back.png)
+![](images/nrfmicro-0.1-back.png)
 
 ## References
 
