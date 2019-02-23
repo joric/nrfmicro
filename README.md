@@ -41,7 +41,7 @@ Production-ready Gerber files are in the [releases section](https://github.com/j
 * AP2112K-3.3-based (SOT-23) power switch
 * MCP73831-based charger (SOT-23)
 
-#### Pictures (current version)
+### Pictures (current version)
 
 ![](front.png)
 
