@@ -41,6 +41,7 @@ Production-ready Gerber files are in the [releases section](https://github.com/j
 #### TODO
 
 * Move DFU pad to the front side (maybe)
+* Better on/off switch (disable bluetooth)?
 
 ### Version 0.1
 
