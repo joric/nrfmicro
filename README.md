@@ -14,9 +14,23 @@ Supposed to be used with a modified Adafruit Feather nRF52840 Express bootloader
 
 Production-ready Gerber files are in the [releases section](https://github.com/joric/nrfmicro/releases).
 
+#### Features
+
+* Same size as a regular Pro Micro
+* nRF52840-based (hardware USB support), both USB Type-C and MicroUSB
+* Optional LIR2032 holder (BS-7) and ON/OFF switch (MSK-12C02) support
+* Optional Crystal (2-pin, 32.768khz) and Inductor (0805 package, 10uH) support
+* MCP73831 and AP2112K-3.3-based (SOT-23) LiPo charger and power circuit
+
+## Pictures (current version)
+
+![](front.png)
+
+![](back.png)
+
 ## Revisions
 
-### Version 0.2 (rev1)
+### Version 0.2
 
 * Added default blue LED at P1.10
 * SWO remapped to default P1.00
@@ -28,24 +42,9 @@ Production-ready Gerber files are in the [releases section](https://github.com/j
 
 * Move DFU pad to the front side (maybe)
 
-### Version 0.1 (rev0)
+### Version 0.1
 
-#### Features
-
-* Same size as a regular Pro Micro
-* USB Type-C and MicroUSB support
-* Optional LIR2032 holder (BS-7)
-* Optional ON/OFF switch (MSK-12C02)
-* Optional Crystal (2-pin, 32.768khz)
-* Optional Inductor (0805 package, 10uH)
-* AP2112K-3.3-based (SOT-23) power switch
-* MCP73831-based charger (SOT-23)
-
-### Pictures (current version)
-
-![](front.png)
-
-![](back.png)
+Initial release
 
 ## References
 
