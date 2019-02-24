@@ -17,35 +17,18 @@ Production-ready Gerber files are in the [releases section](https://github.com/j
 ## Features
 
 * Drop-in replacement for a regular Pro Micro board (PCB size 18.034mm x 33.274mm)
+* Built in KiCad and fully autorouted with [Freerouting](https://freerouting.org) (shouldn't be a problem to modify)
 * E73-2G4M08S1C (nRF52840)-based (hardware USB support), both Micro-USB and USB-C
+* Small size MCP73831 (SOT23) and AP2112K-3.3-based LiPo charger and power circuit
 * Optional LIR2032 holder (BS-7) and battery ON/OFF switch (MSK-12C02)
 * Optional Crystal (2-pin, 32.768khz) and Inductor (0805 package, 10uH)
-* MCP73831 and AP2112K-3.3-based (SOT-23) LiPo charger and power circuit
+* 0.825mm drill holes to provide [spring-loaded pin headers](https://yushakobo.jp/shop/a01mc-00/) support
 
-## Pictures (current version)
+## Pictures
 
 ![](front.png)
 
 ![](back.png)
-
-## Revisions
-
-### Version 0.2
-
-* Added default blue LED at P1.10
-* SWO remapped to default P1.00
-* DFU remapped to default P1.02
-* New mapping for GPIO pins
-* Smaller E73 pads (0.65mm)
-
-#### TODO
-
-* Move DFU pad to the front side (maybe)
-* Better on/off switch (disable bluetooth)?
-
-### Version 0.1
-
-Initial release
 
 ## PCB manufacturers
 

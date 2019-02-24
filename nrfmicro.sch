@@ -21,7 +21,7 @@ Wire Notes Line
 Wire Notes Line
 	11200 500  11200 6500
 Text GLabel 10050 1150 2    60   Input ~ 0
-SWDCLK
+SWCLK
 Text GLabel 10050 1250 2    60   Input ~ 0
 SWDIO
 Text Notes 9800 650  0    60   ~ 0
