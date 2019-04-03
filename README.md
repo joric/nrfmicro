@@ -24,9 +24,9 @@ See project wiki:
 
 ## Pictures
 
-![](front.png)
+![](hardware/front.png)
 
-![](back.png)
+![](hardware/back.png)
 
 ## References
 
