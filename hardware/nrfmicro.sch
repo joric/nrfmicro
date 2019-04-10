@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:nrfmicro-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -303,8 +303,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 2750 9100 2800
 NoConn ~ 8200 3550
-NoConn ~ 9100 2250
-NoConn ~ 9100 2350
 NoConn ~ 9100 3150
 NoConn ~ 9100 3250
 $Comp
@@ -615,7 +613,7 @@ U 1 1 5C74A6AB
 P 1100 2150
 F 0 "Y2" V 1054 2238 50  0000 L CNN
 F 1 "32,768" V 1145 2238 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 1100 2150 50  0001 C CNN
+F 2 "Crystal:Crystal_Round_D1.0mm_Vertical" H 1100 2150 50  0001 C CNN
 F 3 "~" H 1100 2150 50  0001 C CNN
 	1    1100 2150
 	0    1    1    0   
@@ -630,28 +628,6 @@ F 2 "" H 650 2350 50  0001 C CNN
 F 3 "" H 650 2350 50  0001 C CNN
 	1    650  2350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5C73DD8F
-P 900 2300
-F 0 "C2" V 740 2300 50  0000 C CNN
-F 1 "22pF" V 649 2300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 938 2150 50  0001 C CNN
-F 3 "~" H 900 2300 50  0001 C CNN
-	1    900  2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5C7379E0
-P 900 2000
-F 0 "C1" V 648 2000 50  0000 C CNN
-F 1 "22pF" V 739 2000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 938 1850 50  0001 C CNN
-F 3 "~" H 900 2000 50  0001 C CNN
-	1    900  2000
-	0    1    1    0   
 $EndComp
 $Comp
 L nrfmicro:E73-2G4M08S1C-52840 U5
@@ -686,10 +662,6 @@ Wire Wire Line
 	750  2150 750  2300
 Wire Wire Line
 	750  2000 750  2150
-Wire Wire Line
-	1050 2000 1100 2000
-Wire Wire Line
-	1050 2300 1100 2300
 Wire Wire Line
 	1100 2050 1100 2000
 Connection ~ 1100 2000
@@ -948,4 +920,72 @@ Wire Wire Line
 	2500 6250 2500 6450
 Wire Wire Line
 	2500 6450 2600 6450
+$Comp
+L Device:R R6
+U 1 1 5CAE6CCD
+P 9650 2250
+F 0 "R6" V 9857 2250 50  0000 C CNN
+F 1 "5.1K" V 9766 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 2250 50  0001 C CNN
+F 3 "~" H 9650 2250 50  0001 C CNN
+	1    9650 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5CAEDB76
+P 9650 2350
+F 0 "R7" V 9535 2350 50  0000 C CNN
+F 1 "5.1K" V 9444 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 2350 50  0001 C CNN
+F 3 "~" H 9650 2350 50  0001 C CNN
+	1    9650 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 2250 9500 2250
+Wire Wire Line
+	9100 2350 9500 2350
+Wire Wire Line
+	9800 2250 9800 2350
+Connection ~ 9800 2350
+Wire Wire Line
+	9800 2350 9800 2750
+$Comp
+L nrfmicro-rescue:GND #PWR0112
+U 1 1 5CB0CDC9
+P 9800 2750
+F 0 "#PWR0112" H 9800 2500 50  0001 C CNN
+F 1 "GND" H 9800 2600 50  0000 C CNN
+F 2 "" H 9800 2750 50  0001 C CNN
+F 3 "" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2300 1100 2300
+Wire Wire Line
+	1050 2000 1100 2000
+$Comp
+L Device:C C2
+U 1 1 5C73DD8F
+P 900 2300
+F 0 "C2" V 740 2300 50  0000 C CNN
+F 1 "22pF" V 649 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 938 2150 50  0001 C CNN
+F 3 "~" H 900 2300 50  0001 C CNN
+	1    900  2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C7379E0
+P 900 2000
+F 0 "C1" V 648 2000 50  0000 C CNN
+F 1 "22pF" V 739 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 938 1850 50  0001 C CNN
+F 3 "~" H 900 2000 50  0001 C CNN
+	1    900  2000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
