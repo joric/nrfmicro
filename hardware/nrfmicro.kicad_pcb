@@ -329,7 +329,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5CD6DD2A)
-    (at 103.801533 118.702775 90)
+    (at 103.801533 118.337775 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /5CD72AAF)
