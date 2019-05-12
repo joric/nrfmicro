@@ -643,17 +643,6 @@ $EndComp
 Text Label 8900 3650 0    60   ~ 0
 S3
 $Comp
-L nrfmicro-rescue:GND #PWR0105
-U 1 1 5C7DC16D
-P 8600 3650
-F 0 "#PWR0105" H 8600 3400 50  0001 C CNN
-F 1 "GND" H 8600 3500 50  0000 C CNN
-F 2 "" H 8600 3650 50  0001 C CNN
-F 3 "" H 8600 3650 50  0001 C CNN
-	1    8600 3650
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Open JP4
 U 1 1 5C7DDA39
 P 8750 4000
@@ -666,17 +655,6 @@ F 3 "~" H 8750 4000 50  0001 C CNN
 $EndComp
 Text Label 8900 4000 0    60   ~ 0
 S4
-$Comp
-L nrfmicro-rescue:GND #PWR0110
-U 1 1 5C7DDA41
-P 8600 4000
-F 0 "#PWR0110" H 8600 3750 50  0001 C CNN
-F 1 "GND" H 8600 3850 50  0000 C CNN
-F 2 "" H 8600 4000 50  0001 C CNN
-F 3 "" H 8600 4000 50  0001 C CNN
-	1    8600 4000
-	0    1    1    0   
-$EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP9
 U 1 1 5C7E6EA8
@@ -731,17 +709,6 @@ Text Label 9500 4000 2    60   ~ 0
 S8
 Text GLabel 9800 2950 2    60   Input ~ 0
 VBAT
-$Comp
-L nrfmicro-rescue:GND #PWR0111
-U 1 1 5C7EA1CF
-P 9800 3300
-F 0 "#PWR0111" H 9800 3050 50  0001 C CNN
-F 1 "GND" H 9800 3150 50  0000 C CNN
-F 2 "" H 9800 3300 50  0001 C CNN
-F 3 "" H 9800 3300 50  0001 C CNN
-	1    9800 3300
-	0    -1   -1   0   
-$EndComp
 Text GLabel 9800 3650 2    60   Input ~ 0
 RESET
 $Comp
@@ -799,17 +766,6 @@ $EndComp
 Text Label 8900 5300 0    60   ~ 0
 S3
 $Comp
-L nrfmicro-rescue:GND #PWR0113
-U 1 1 5C80478A
-P 9800 5300
-F 0 "#PWR0113" H 9800 5050 50  0001 C CNN
-F 1 "GND" H 9800 5150 50  0000 C CNN
-F 2 "" H 9800 5300 50  0001 C CNN
-F 3 "" H 9800 5300 50  0001 C CNN
-	1    9800 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Open JP8
 U 1 1 5C804790
 P 8750 5650
@@ -822,17 +778,6 @@ F 3 "~" H 8750 5650 50  0001 C CNN
 $EndComp
 Text Label 8900 5650 0    60   ~ 0
 S4
-$Comp
-L nrfmicro-rescue:GND #PWR0114
-U 1 1 5C804798
-P 9800 5650
-F 0 "#PWR0114" H 9800 5400 50  0001 C CNN
-F 1 "GND" H 9800 5500 50  0000 C CNN
-F 2 "" H 9800 5650 50  0001 C CNN
-F 3 "" H 9800 5650 50  0001 C CNN
-	1    9800 5650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP13
 U 1 1 5C80479E
@@ -887,17 +832,6 @@ Text Label 9500 5650 2    60   ~ 0
 S8
 Text GLabel 8600 4600 0    60   Input ~ 0
 VBAT
-$Comp
-L nrfmicro-rescue:GND #PWR0115
-U 1 1 5C8047BF
-P 8600 4950
-F 0 "#PWR0115" H 8600 4700 50  0001 C CNN
-F 1 "GND" H 8600 4800 50  0000 C CNN
-F 2 "" H 8600 4950 50  0001 C CNN
-F 3 "" H 8600 4950 50  0001 C CNN
-	1    8600 4950
-	0    1    1    0   
-$EndComp
 Text GLabel 8600 5300 0    60   Input ~ 0
 RESET
 $Comp
@@ -1140,7 +1074,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 4950 6050 4950
 Text GLabel 6050 4950 2    60   Input ~ 0
-HHKB_GND
+EXT_GND
 Text GLabel 5000 5300 0    60   Input ~ 0
 POWER_PIN
 Wire Wire Line
@@ -1149,8 +1083,8 @@ $Comp
 L Device:R R9
 U 1 1 5CD8C0A3
 P 5200 5050
-F 0 "R9" V 5407 5050 50  0000 C CNN
-F 1 "4.7K" V 5316 5050 50  0000 C CNN
+F 0 "R9" H 5270 5096 50  0000 L CNN
+F 1 "10K" H 5270 5005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 5050 50  0001 C CNN
 F 3 "~" H 5200 5050 50  0001 C CNN
 	1    5200 5050
@@ -1162,16 +1096,16 @@ Connection ~ 5200 5300
 Wire Wire Line
 	5200 5300 5000 5300
 Wire Wire Line
-	5200 4900 5200 4750
+	5200 4900 5200 4800
 $Comp
 L nrfmicro-rescue:VCC #PWR0120
 U 1 1 5CD93483
-P 5200 4750
-F 0 "#PWR0120" H 5200 4600 50  0001 C CNN
-F 1 "VCC" H 5200 4900 50  0000 C CNN
-F 2 "" H 5200 4750 50  0001 C CNN
-F 3 "" H 5200 4750 50  0001 C CNN
-	1    5200 4750
+P 5200 4800
+F 0 "#PWR0120" H 5200 4650 50  0001 C CNN
+F 1 "VCC" H 5200 4950 50  0000 C CNN
+F 2 "" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
 	1    0    0    -1  
 $EndComp
 Text Notes 4450 5150 0    60   ~ 0
@@ -1180,4 +1114,16 @@ Text GLabel 1300 2650 0    60   Input ~ 0
 POWER_PIN
 Wire Wire Line
 	1300 2650 1650 2650
+Text GLabel 8600 3650 0    60   Input ~ 0
+EXT_GND
+Text GLabel 8600 4000 0    60   Input ~ 0
+EXT_GND
+Text GLabel 9800 5300 2    60   Input ~ 0
+EXT_GND
+Text GLabel 9800 5650 2    60   Input ~ 0
+EXT_GND
+Text GLabel 8600 4950 0    60   Input ~ 0
+EXT_GND
+Text GLabel 9800 3300 2    60   Input ~ 0
+EXT_GND
 $EndSCHEMATC
