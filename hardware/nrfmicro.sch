@@ -984,26 +984,7 @@ F 3 "" H 2550 6200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y1
-U 1 1 5CBCDF2E
-P 1050 2100
-F 0 "Y1" V 1096 2231 50  0000 L CNN
-F 1 "Crystal" V 1005 2231 50  0000 L CNN
-F 2 "Crystal:Crystal_Round_D1.0mm_Vertical" H 1050 2100 50  0001 C CNN
-F 3 "~" H 1050 2100 50  0001 C CNN
-	1    1050 2100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1650 2250 1050 2250
-Wire Wire Line
-	1650 2050 1300 2050
-Wire Wire Line
-	1300 2050 1300 1950
-Wire Wire Line
-	1300 1950 1050 1950
-$Comp
-L Connector_Generic:Conn_01x02 J3
+L Connector_Generic:Conn_01x04 J3
 U 1 1 5CBAE12D
 P 8450 2100
 F 0 "J3" H 8530 2092 50  0000 L CNN
@@ -1015,7 +996,7 @@ F 3 "~" H 8450 2100 50  0001 C CNN
 $EndComp
 Text GLabel 8250 2100 0    60   Input ~ 0
 SWD
-Text GLabel 8250 2200 0    60   Input ~ 0
+Text GLabel 8250 2000 0    60   Input ~ 0
 SWC
 Wire Wire Line
 	2000 6300 2350 6300
@@ -1126,4 +1107,30 @@ Text GLabel 8600 4950 0    60   Input ~ 0
 EXT_GND
 Text GLabel 9800 3300 2    60   Input ~ 0
 EXT_GND
+$Comp
+L nrfmicro-rescue:GND #PWR?
+U 1 1 5CDC4978
+P 8000 2200
+F 0 "#PWR?" H 8000 1950 50  0001 C CNN
+F 1 "GND" H 8000 2050 50  0000 C CNN
+F 2 "" H 8000 2200 50  0001 C CNN
+F 3 "" H 8000 2200 50  0001 C CNN
+	1    8000 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L nrfmicro-rescue:VCC #PWR?
+U 1 1 5CDCA809
+P 8100 2300
+F 0 "#PWR?" H 8100 2150 50  0001 C CNN
+F 1 "VCC" H 8100 2450 50  0000 C CNN
+F 2 "" H 8100 2300 50  0001 C CNN
+F 3 "" H 8100 2300 50  0001 C CNN
+	1    8100 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 2200 8250 2200
+Wire Wire Line
+	8100 2300 8250 2300
 $EndSCHEMATC
