@@ -158,7 +158,6 @@ F 3 "" H 8450 1600 50  0001 C CNN
 $EndComp
 Text Notes 2250 4450 0    60   ~ 0
 LiPo Charging\n
-NoConn ~ 8000 1550
 Text Notes 7550 7500 0    60   ~ 0
 nrfmicro
 Text Notes 8250 7650 0    60   ~ 0
@@ -472,8 +471,6 @@ Text GLabel 8450 1250 2    60   Input ~ 0
 DATA-
 Wire Wire Line
 	2050 5250 2150 5250
-Text Label 5350 1300 2    60   ~ 0
-P0.15
 Text Label 5350 1400 2    60   ~ 0
 P0.17
 Text Label 6350 1700 0    60   ~ 0
@@ -526,7 +523,6 @@ Text GLabel 10100 1450 2    60   Input ~ 0
 DATA-
 NoConn ~ 10100 2000
 NoConn ~ 10100 2100
-NoConn ~ 9200 2400
 $Comp
 L nrfmicro-rescue:GND #PWR0101
 U 1 1 5C755B16
@@ -582,8 +578,6 @@ Text Label 5350 1000 2    60   ~ 0
 S2
 Text Label 5350 1100 2    60   ~ 0
 S3
-Text Label 5350 1200 2    60   ~ 0
-S4
 Text Label 6350 1200 0    60   ~ 0
 S8
 Text Label 6350 1100 0    60   ~ 0
@@ -950,21 +944,6 @@ F 3 "" H 2550 6200 50  0001 C CNN
 	1    2550 6200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5CBAE12D
-P 8450 2100
-F 0 "J3" H 8530 2092 50  0000 L CNN
-F 1 "Conn_01x02" H 8530 2001 50  0000 L CNN
-F 2 "nrfmicro:connector_swd" H 8450 2100 50  0001 C CNN
-F 3 "~" H 8450 2100 50  0001 C CNN
-	1    8450 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel 8250 2100 0    60   Input ~ 0
-SWD
-Text GLabel 8250 2000 0    60   Input ~ 0
-SWC
 Wire Wire Line
 	2000 6300 2350 6300
 Wire Wire Line
@@ -1075,32 +1054,6 @@ EXT_GND
 Text GLabel 9550 3300 2    60   Input ~ 0
 EXT_GND
 $Comp
-L nrfmicro-rescue:GND #PWR0105
-U 1 1 5CDC4978
-P 8000 2200
-F 0 "#PWR0105" H 8000 1950 50  0001 C CNN
-F 1 "GND" H 8000 2050 50  0000 C CNN
-F 2 "" H 8000 2200 50  0001 C CNN
-F 3 "" H 8000 2200 50  0001 C CNN
-	1    8000 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L nrfmicro-rescue:VCC #PWR0110
-U 1 1 5CDCA809
-P 8100 2300
-F 0 "#PWR0110" H 8100 2150 50  0001 C CNN
-F 1 "VCC" H 8100 2450 50  0000 C CNN
-F 2 "" H 8100 2300 50  0001 C CNN
-F 3 "" H 8100 2300 50  0001 C CNN
-	1    8100 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8000 2200 8250 2200
-Wire Wire Line
-	8100 2300 8250 2300
-$Comp
 L Connector:USB_C_Receptacle_USB2.0 J2
 U 1 1 5C743564
 P 9500 1500
@@ -1133,15 +1086,10 @@ F 3 "" H 2300 7100 50  0001 C CNN
 	1    2300 7100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small G2
-U 1 1 5CDB586A
-P 10600 3550
-F 0 "G2" H 10600 3936 50  0000 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10600 3325 50  0001 C CNN
-F 2 "nrfmicro:mechcult_vert" H 10600 3845 50  0000 C CNN
-F 3 "~" H 10600 3550 50  0001 C CNN
-	1    10600 3550
-	1    0    0    -1  
-$EndComp
+Text Label 5350 1200 2    60   ~ 0
+S4
+Text Label 5350 1300 2    60   ~ 0
+P0.15
+NoConn ~ 8000 1550
+NoConn ~ 9200 2400
 $EndSCHEMATC
