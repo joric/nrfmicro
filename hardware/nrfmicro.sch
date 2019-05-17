@@ -336,8 +336,6 @@ Text Label 1650 2750 2    60   ~ 0
 P0.04
 Text Label 1650 2150 2    60   ~ 0
 P0.26
-Text GLabel 3300 1550 2    60   Input ~ 0
-SWC
 Text GLabel 3300 1750 2    60   Input ~ 0
 SWD
 Text GLabel 3300 2750 2    60   Input ~ 0
@@ -499,8 +497,6 @@ Text Label 3000 2850 0    60   ~ 0
 P0.18
 Wire Wire Line
 	3850 7350 3850 7400
-Text GLabel 3300 1650 2    60   Input ~ 0
-DFU
 Wire Wire Line
 	3000 1650 3300 1650
 Wire Wire Line
@@ -1092,4 +1088,45 @@ Text Label 5350 1300 2    60   ~ 0
 P0.15
 NoConn ~ 8000 1550
 NoConn ~ 9200 2400
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5CDF605B
+P 8400 2000
+F 0 "J3" H 8480 1992 50  0000 L CNN
+F 1 "Conn_01x04" H 8480 1901 50  0000 L CNN
+F 2 "nrfmicro:connector_swd" H 8400 2000 50  0001 C CNN
+F 3 "~" H 8400 2000 50  0001 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR0105
+U 1 1 5CDF872B
+P 8200 2200
+F 0 "#PWR0105" H 8200 1950 50  0001 C CNN
+F 1 "GND" H 8200 2050 50  0000 C CNN
+F 2 "" H 8200 2200 50  0001 C CNN
+F 3 "" H 8200 2200 50  0001 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrfmicro-rescue:VCC #PWR0110
+U 1 1 5CDFB56A
+P 8200 2100
+F 0 "#PWR0110" H 8200 1950 50  0001 C CNN
+F 1 "VCC" H 8200 2250 50  0000 C CNN
+F 2 "" H 8200 2100 50  0001 C CNN
+F 3 "" H 8200 2100 50  0001 C CNN
+	1    8200 2100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3300 1650 2    60   Input ~ 0
+DFU
+Text GLabel 3300 1550 2    60   Input ~ 0
+SWC
+Text GLabel 8200 1900 0    60   Input ~ 0
+SWC
+Text GLabel 8200 2000 0    60   Input ~ 0
+SWD
 $EndSCHEMATC
