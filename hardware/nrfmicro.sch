@@ -195,10 +195,10 @@ F 3 "~" H 3150 5050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Battery_Management:MCP73831-2-OT U3
+L Battery_Management:MCP73831-2-OT U2
 U 1 1 5C7257C3
 P 2550 5150
-F 0 "U3" H 2550 5536 50  0000 C CNN
+F 0 "U2" H 2550 5536 50  0000 C CNN
 F 1 "MCP73831" H 2550 5627 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2600 4900 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2400 5100 50  0001 C CNN
@@ -238,10 +238,10 @@ Wire Wire Line
 Wire Wire Line
 	3600 5400 3600 5200
 $Comp
-L Regulator_Linear:AP2112K-3.3 U2
+L Regulator_Linear:AP2112K-3.3 U3
 U 1 1 5CC0D0AF
 P 2850 6950
-F 0 "U2" H 2850 7292 50  0000 C CNN
+F 0 "U3" H 2850 7292 50  0000 C CNN
 F 1 "AP2112K-3.3" H 2850 7201 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2850 7275 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 2850 7050 50  0001 C CNN
