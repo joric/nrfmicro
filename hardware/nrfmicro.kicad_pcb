@@ -394,7 +394,7 @@
   )
 
   (module nrfmicro:HRO-TYPE-C-31-M-12 (layer F.Cu) (tedit 5C42C658) (tstamp 5E2CDA63)
-    (at 103.801533 107.780775 180)
+    (at 103.803533 108.112775 180)
     (path /5C743564)
     (attr smd)
     (fp_text reference J2 (at 0 -9.25 180) (layer F.SilkS)
