@@ -507,28 +507,23 @@ Text Label 1650 2050 2    60   ~ 0
 P0.00
 Text Label 1650 2250 2    60   ~ 0
 P0.01
-Wire Wire Line
-	10100 1400 10100 1500
-Wire Wire Line
-	10100 1600 10100 1700
-Text GLabel 10100 900  2    60   Input ~ 0
+Text GLabel 9825 1100 2    60   Input ~ 0
 VBUS
-Text GLabel 10100 1650 2    60   Input ~ 0
+Text GLabel 10000 1625 2    60   Input ~ 0
 DATA+
-Text GLabel 10100 1450 2    60   Input ~ 0
+Text GLabel 10000 1450 2    60   Input ~ 0
 DATA-
-NoConn ~ 10100 2000
-NoConn ~ 10100 2100
+NoConn ~ 9825 1800
 $Comp
 L nrfmicro-rescue:GND #PWR0101
 U 1 1 5C755B16
-P 9500 2400
-F 0 "#PWR0101" H 9500 2150 50  0001 C CNN
-F 1 "GND" H 9500 2250 50  0000 C CNN
-F 2 "" H 9500 2400 50  0001 C CNN
-F 3 "" H 9500 2400 50  0001 C CNN
-	1    9500 2400
-	0    -1   -1   0   
+P 10225 1000
+F 0 "#PWR0101" H 10225 750 50  0001 C CNN
+F 1 "GND" H 10225 850 50  0000 C CNN
+F 2 "" H 10225 1000 50  0001 C CNN
+F 3 "" H 10225 1000 50  0001 C CNN
+	1    10225 1000
+	1    0    0    -1  
 $EndComp
 $Comp
 L nrfmicro-rescue:ProMicro U4
@@ -814,43 +809,38 @@ F 3 "" H 8350 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R5
 U 1 1 5CAA680B
-P 10750 1100
-F 0 "R4" V 10957 1100 50  0000 C CNN
-F 1 "5.1K" V 10866 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 1100 50  0001 C CNN
-F 3 "~" H 10750 1100 50  0001 C CNN
-	1    10750 1100
+P 10475 1900
+F 0 "R5" V 10682 1900 50  0000 C CNN
+F 1 "5.1K" V 10591 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10405 1900 50  0001 C CNN
+F 3 "~" H 10475 1900 50  0001 C CNN
+	1    10475 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R4
 U 1 1 5CAA879F
-P 10750 1200
-F 0 "R5" V 10635 1200 50  0000 C CNN
-F 1 "5.1K" V 10544 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 1200 50  0001 C CNN
-F 3 "~" H 10750 1200 50  0001 C CNN
-	1    10750 1200
+P 10475 1300
+F 0 "R4" V 10360 1300 50  0000 C CNN
+F 1 "5.1K" V 10269 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10405 1300 50  0001 C CNN
+F 3 "~" H 10475 1300 50  0001 C CNN
+	1    10475 1300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10100 1100 10600 1100
-Wire Wire Line
-	10900 1100 10900 1200
-Connection ~ 10900 1200
-Wire Wire Line
-	10900 1200 10900 1900
+	9825 1300 10325 1300
 $Comp
 L nrfmicro-rescue:GND #PWR0118
 U 1 1 5CABCE7D
-P 10900 1900
-F 0 "#PWR0118" H 10900 1650 50  0001 C CNN
-F 1 "GND" H 10900 1750 50  0000 C CNN
-F 2 "" H 10900 1900 50  0001 C CNN
-F 3 "" H 10900 1900 50  0001 C CNN
-	1    10900 1900
+P 10625 2100
+F 0 "#PWR0118" H 10625 1850 50  0001 C CNN
+F 1 "GND" H 10625 1950 50  0000 C CNN
+F 2 "" H 10625 2100 50  0001 C CNN
+F 3 "" H 10625 2100 50  0001 C CNN
+	1    10625 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -858,7 +848,7 @@ Wire Wire Line
 Text GLabel 2900 6200 2    60   Input ~ 0
 VBAT
 Wire Wire Line
-	10100 1200 10600 1200
+	9825 1900 10325 1900
 $Comp
 L Device:R R6
 U 1 1 5CB1AD7E
@@ -917,7 +907,7 @@ $EndComp
 Text GLabel 1300 4150 0    60   Input ~ 0
 BLUE_LED
 Text GLabel 1400 6050 0    60   Input ~ 0
-P0.26
+P0.04
 $Comp
 L nrfmicro-rescue:R R8
 U 1 1 5CB84BCA
@@ -1050,23 +1040,23 @@ EXT_GND
 Text GLabel 9550 3300 2    60   Input ~ 0
 EXT_GND
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
+L nrfmicro:HRO-TYPE-C-31-M-12 J2
 U 1 1 5C743564
-P 9500 1500
-F 0 "J2" H 9605 2367 50  0000 C CNN
-F 1 "USB-C USB 2.0 MC-372" H 9605 2276 50  0000 C CNN
-F 2 "nrfmicro:HRO-TYPE-C-31-M-12" H 9650 1500 50  0000 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9650 1500 50  0001 C CNN
-	1    9500 1500
+P 9725 1550
+F 0 "J2" H 9558 2415 50  0000 C CNN
+F 1 "USB-C USB 2.0 MC-372" H 9558 2324 50  0000 C CNN
+F 2 "nrfmicro:HRO-TYPE-C-31-M-12" H 9558 2233 50  0000 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9875 1550 50  0001 C CNN
+	1    9725 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L nrfmicro-rescue:USB_OTG J1
+L nrfmicro-rescue:USB_OTG e1
 U 1 1 5B116606
 P 8100 1150
-F 0 "J1" H 7900 1600 50  0000 L CNN
+F 0 "e1" H 7900 1600 50  0000 L CNN
 F 1 "USB_OTG 5 Pin 4 Legs" H 7900 1500 50  0000 L CNN
-F 2 "nrfmicro:usb_micro" H 8250 1100 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 8250 1100 50  0001 C CNN
 F 3 "" H 8250 1100 50  0001 C CNN
 	1    8100 1150
 	1    0    0    -1  
@@ -1086,8 +1076,6 @@ Text Label 5350 1200 2    60   ~ 0
 S4
 Text Label 5350 1300 2    60   ~ 0
 P0.15
-NoConn ~ 8000 1550
-NoConn ~ 9200 2400
 Text GLabel 3300 1650 2    60   Input ~ 0
 DFU
 Text GLabel 3300 1550 2    60   Input ~ 0
@@ -1131,4 +1119,51 @@ F 3 "~" H 8300 2400 50  0001 C CNN
 $EndComp
 Text GLabel 8100 2400 0    60   Input ~ 0
 VBAT
+Text GLabel 9825 2000 2    60   Input ~ 0
+VBUS
+$Comp
+L nrfmicro-rescue:GND #PWR0110
+U 1 1 5E43A8F0
+P 10175 2100
+F 0 "#PWR0110" H 10175 1850 50  0001 C CNN
+F 1 "GND" H 10175 1950 50  0000 C CNN
+F 2 "" H 10175 2100 50  0001 C CNN
+F 3 "" H 10175 2100 50  0001 C CNN
+	1    10175 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9825 1000 10225 1000
+NoConn ~ 9825 1200
+Wire Wire Line
+	9825 1400 9900 1400
+Wire Wire Line
+	9900 1400 9900 1450
+Wire Wire Line
+	9900 1600 9825 1600
+Wire Wire Line
+	9825 1500 9950 1500
+Wire Wire Line
+	9950 1500 9950 1625
+Wire Wire Line
+	9950 1700 9825 1700
+Wire Wire Line
+	10000 1450 9900 1450
+Connection ~ 9900 1450
+Wire Wire Line
+	9900 1450 9900 1600
+Wire Wire Line
+	10000 1625 9950 1625
+Connection ~ 9950 1625
+Wire Wire Line
+	9950 1625 9950 1700
+Wire Wire Line
+	10625 1300 10625 1900
+Connection ~ 10625 1900
+Wire Wire Line
+	10625 1900 10625 2100
+Wire Wire Line
+	9825 2100 10175 2100
+NoConn ~ 9825 2200
+NoConn ~ 8000 1550
 $EndSCHEMATC
