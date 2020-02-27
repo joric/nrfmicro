@@ -933,7 +933,7 @@ $EndComp
 Wire Wire Line
 	2000 6300 2350 6300
 Wire Wire Line
-	1400 6050 1550 6050
+	1400 6050 1475 6050
 Wire Wire Line
 	1850 6050 2000 6050
 Wire Wire Line
@@ -965,7 +965,7 @@ L Transistor_FET:BS870 Q2
 U 1 1 5CD72AAF
 P 5500 5300
 F 0 "Q2" H 5706 5346 50  0000 L CNN
-F 1 "SI2306" H 5706 5255 50  0000 L CNN
+F 1 "AO3406" H 5706 5255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 5225 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/ds11302.pdf" H 5500 5300 50  0001 L CNN
 	1    5500 5300
@@ -1051,10 +1051,10 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9875 15
 	1    0    0    -1  
 $EndComp
 $Comp
-L nrfmicro-rescue:USB_OTG e1
+L nrfmicro-rescue:USB_OTG J1
 U 1 1 5B116606
 P 8100 1150
-F 0 "e1" H 7900 1600 50  0000 L CNN
+F 0 "J1" H 7900 1600 50  0000 L CNN
 F 1 "USB_OTG 5 Pin 4 Legs" H 7900 1500 50  0000 L CNN
 F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 8250 1100 50  0001 C CNN
 F 3 "" H 8250 1100 50  0001 C CNN
@@ -1166,4 +1166,13 @@ Wire Wire Line
 	9825 2100 10175 2100
 NoConn ~ 9825 2200
 NoConn ~ 8000 1550
+Text GLabel 1400 6225 0    60   Input ~ 0
+P0.26
+Wire Wire Line
+	1400 6225 1475 6225
+Wire Wire Line
+	1475 6225 1475 6050
+Connection ~ 1475 6050
+Wire Wire Line
+	1475 6050 1550 6050
 $EndSCHEMATC
