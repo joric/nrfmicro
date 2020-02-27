@@ -1,12 +1,9 @@
-# HHKB-BLE
+# nRFMicro
 
-This is an experimental (untested) HHKB-BLE branch with an extra mosfet.
+Project wiki: https://github.com/joric/nrfmicro/wiki
 
 ## Pictures
 
 ![](hardware/front.png)
 ![](hardware/back.png)
 
-## References
-
-* https://github.com/joric/nrfmicro/wiki/HHKB-BLE
