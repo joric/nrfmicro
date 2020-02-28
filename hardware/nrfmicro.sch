@@ -706,19 +706,19 @@ F 3 "" H 3325 3050 50  0001 C CNN
 $EndComp
 Text GLabel 3000 3150 2    60   Input ~ 0
 VDDH
-Text GLabel 2850 4100 0    60   Input ~ 0
+Text GLabel 2075 3675 0    60   Input ~ 0
 VDDH
-Text GLabel 3350 4100 2    60   Input ~ 0
+Text GLabel 2575 3675 2    60   Input ~ 0
 DCCH
 $Comp
 L pspice:INDUCTOR L1
 U 1 1 5E608515
-P 3100 4100
-F 0 "L1" H 3100 4315 50  0000 C CNN
-F 1 "10uH" H 3100 4224 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 3100 4100 50  0001 C CNN
-F 3 "~" H 3100 4100 50  0001 C CNN
-	1    3100 4100
+P 2325 3675
+F 0 "L1" H 2325 3890 50  0000 C CNN
+F 1 "10uH" H 2325 3799 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 2325 3675 50  0001 C CNN
+F 3 "~" H 2325 3675 50  0001 C CNN
+	1    2325 3675
 	1    0    0    -1  
 $EndComp
 $Comp
