@@ -219,7 +219,7 @@
     (tags SOD-323F)
     (path /5B158495)
     (attr smd)
-    (fp_text reference D1 (at -0.329975 0.075733 180) (layer F.SilkS)
+    (fp_text reference D1 (at -0.253775 0.075733 180) (layer F.SilkS)
       (effects (font (size 0.65 0.65) (thickness 0.1)))
     )
     (fp_text value 1N5819 (at 0.1 1.9 90) (layer F.Fab)
@@ -447,7 +447,7 @@
     (tags capacitor)
     (path /5E599A24)
     (attr smd)
-    (fp_text reference C1 (at -0.0255 0 -90) (layer F.SilkS) hide
+    (fp_text reference C1 (at 1.778225 -0.000467) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 10uF (at 0 1.43 90) (layer F.Fab)
@@ -483,7 +483,7 @@
     (tags resistor)
     (path /5E6319B8)
     (attr smd)
-    (fp_text reference R6 (at 0 -0.000467) (layer F.SilkS) hide
+    (fp_text reference R6 (at 1.778225 -0.000467) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 2M (at 0 1.43 90) (layer F.Fab)
@@ -519,7 +519,7 @@
     (tags resistor)
     (path /5E62E248)
     (attr smd)
-    (fp_text reference R1 (at 0 0 270) (layer F.SilkS) hide
+    (fp_text reference R1 (at -1.778225 0.000467) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 800K (at 0 1.43 270) (layer F.Fab)
@@ -555,7 +555,7 @@
     (tags inductor)
     (path /5E608515)
     (attr smd)
-    (fp_text reference L1 (at 0 0 90) (layer F.SilkS) hide
+    (fp_text reference L1 (at -1.878825 -0.065833 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 10uH (at 0 1.43 270) (layer F.Fab)
@@ -591,7 +591,7 @@
     (tags capacitor)
     (path /5B158BD8)
     (attr smd)
-    (fp_text reference C3 (at 0.0255 0 90) (layer F.SilkS) hide
+    (fp_text reference C3 (at 1.778225 0.000033 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 10uF (at 0 1.43 90) (layer F.Fab)
@@ -627,7 +627,7 @@
     (tags resistor)
     (path /5CD8C0A3)
     (attr smd)
-    (fp_text reference R9 (at 0.0255 -1.397 -90) (layer F.SilkS) hide
+    (fp_text reference R9 (at 1.847825 0.054533) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 10K (at 0 1.43 90) (layer F.Fab)
@@ -663,7 +663,7 @@
     (tags resistor)
     (path /5CAA879F)
     (attr smd)
-    (fp_text reference R4 (at 0 0 270) (layer F.SilkS) hide
+    (fp_text reference R4 (at -1.778225 0.000467) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 5.1K (at 0 1.43 270) (layer F.Fab)
@@ -694,12 +694,12 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5CA67D0C)
-    (at 102.151 118.195 270)
+    (at 102.150533 118.194775 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CAA680B)
     (attr smd)
-    (fp_text reference R5 (at 0.635 -1.524 270) (layer F.SilkS) hide
+    (fp_text reference R5 (at -1.778 0) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 5.1K (at 0 1.43 270) (layer F.Fab)
@@ -735,7 +735,7 @@
     (tags resistor)
     (path /5B159927)
     (attr smd)
-    (fp_text reference R3 (at -0.0255 0 270) (layer F.SilkS) hide
+    (fp_text reference R3 (at -1.778225 -0.000033) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 100K (at 0 1.43 270) (layer F.Fab)
@@ -771,7 +771,7 @@
     (tags resistor)
     (path /5C701629)
     (attr smd)
-    (fp_text reference R2 (at -0.635 1.524 270) (layer F.SilkS) hide
+    (fp_text reference R2 (at 1.778225 -0.000467) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value 4.7K (at 0 1.43 90) (layer F.Fab)
@@ -1035,7 +1035,7 @@
     (tags SOT-23)
     (path /5CD72AAF)
     (attr smd)
-    (fp_text reference Q2 (at 0 0.000467 unlocked) (layer F.SilkS)
+    (fp_text reference Q2 (at -0.000225 0.000467 unlocked) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value AO3406 (at -2.032225 -0.000467) (layer F.SilkS) hide
@@ -1076,7 +1076,7 @@
     (tags SOT-23)
     (path /5B1587C5)
     (attr smd)
-    (fp_text reference Q1 (at 0 -0.000225 180) (layer F.SilkS)
+    (fp_text reference Q1 (at 0.000225 -0.000225 180) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value AO3407 (at 0 0 90) (layer F.SilkS) hide
