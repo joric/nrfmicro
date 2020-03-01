@@ -741,8 +741,6 @@ F 3 "" H 8650 1375 50  0001 C CNN
 	1    8650 1375
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 10475 2300
-NoConn ~ 10475 2400
 $Comp
 L nrfmicro-rescue:GND #PWR0111
 U 1 1 5E5EC00A
