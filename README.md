@@ -1,4 +1,4 @@
-# devel
+# nRFMicro
 
 This is an experimental (untested) devel branch
 
