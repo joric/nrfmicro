@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.0)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -264,7 +264,7 @@
     (pad "" thru_hole circle (at -5.5753 2.0574) (size 1 1) (drill 0.6) (layers *.Cu *.Mask))
     (pad "" thru_hole circle (at -5.5753 1.7526) (size 1 1) (drill 0.6) (layers *.Cu *.Mask))
     (pad "" thru_hole circle (at -5.5756 1.4732) (size 1 1) (drill 0.6) (layers *.Cu *.Mask))
-    (model ${KIPRJMOD}/nrfmicro.pretty/USB-C-C168688.step
+    (model ${KIPRJMOD}/nrfmicro.pretty/3d/USB-C-C168688.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -440,7 +440,7 @@
       (net 1 GND))
     (pad 18 thru_hole rect (at 2.092 -0.023) (size 0.65 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 45 0.04))
-    (model D:/Projects/github/nrfmicro/trunk/hardware/nrfmicro.pretty/E73-2G4M08S1C.x3d
+    (model ${KIPRJMOD}/nrfmicro.pretty/3d/E73-2G4M08S1C.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
