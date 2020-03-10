@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:nrfmicro-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -438,7 +437,7 @@ L Device:R R9
 U 1 1 5CD8C0A3
 P 1550 5000
 F 0 "R9" H 1620 5046 50  0000 L CNN
-F 1 "10K" H 1620 4955 50  0000 L CNN
+F 1 "1M" H 1620 4955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1480 5000 50  0001 C CNN
 F 3 "~" H 1550 5000 50  0001 C CNN
 	1    1550 5000
@@ -516,26 +515,26 @@ $EndComp
 Text GLabel 8200 2475 0    60   Input ~ 0
 VBAT
 NoConn ~ 3125 6850
-Text GLabel 8350 4950 0    60   Input ~ 0
+Text GLabel 9550 4950 2    60   Input ~ 0
 EXT_GND
-Text GLabel 9550 5650 2    60   Input ~ 0
+Text GLabel 8350 5650 0    60   Input ~ 0
 EXT_GND
-Text GLabel 9550 5300 2    60   Input ~ 0
+Text GLabel 8350 5300 0    60   Input ~ 0
 EXT_GND
 $Comp
 L nrfmicro-rescue:VCC #PWR0116
 U 1 1 5C8047C6
-P 8350 5650
-F 0 "#PWR0116" H 8350 5500 50  0001 C CNN
-F 1 "VCC" H 8350 5800 50  0000 C CNN
-F 2 "" H 8350 5650 50  0001 C CNN
-F 3 "" H 8350 5650 50  0001 C CNN
-	1    8350 5650
-	0    -1   -1   0   
+P 9550 5650
+F 0 "#PWR0116" H 9550 5500 50  0001 C CNN
+F 1 "VCC" H 9550 5800 50  0000 C CNN
+F 2 "" H 9550 5650 50  0001 C CNN
+F 3 "" H 9550 5650 50  0001 C CNN
+	1    9550 5650
+	0    1    1    0   
 $EndComp
-Text GLabel 8350 5300 0    60   Input ~ 0
+Text GLabel 9550 5300 2    60   Input ~ 0
 RESET
-Text GLabel 8350 4600 0    60   Input ~ 0
+Text GLabel 9550 4600 2    60   Input ~ 0
 VBAT
 Text Label 9250 5650 2    60   ~ 0
 S8
@@ -549,11 +548,11 @@ Text Label 8650 5650 0    60   ~ 0
 S4
 Text Label 8650 5300 0    60   ~ 0
 S3
-Text GLabel 9550 4950 2    60   Input ~ 0
+Text GLabel 8350 4950 0    60   Input ~ 0
 RXD
 Text Label 8650 4950 0    60   ~ 0
 S2
-Text GLabel 9550 4600 2    60   Input ~ 0
+Text GLabel 8350 4600 0    60   Input ~ 0
 TXD
 Text Label 8650 4600 0    60   ~ 0
 S1
