@@ -450,17 +450,6 @@ Wire Wire Line
 	1550 5250 1350 5250
 Wire Wire Line
 	1550 4850 1550 4750
-$Comp
-L nrfmicro-rescue:VCC #PWR0120
-U 1 1 5CD93483
-P 1550 4750
-F 0 "#PWR0120" H 1550 4600 50  0001 C CNN
-F 1 "VCC" H 1550 4900 50  0000 C CNN
-F 2 "" H 1550 4750 50  0001 C CNN
-F 3 "" H 1550 4750 50  0001 C CNN
-	1    1550 4750
-	1    0    0    -1  
-$EndComp
 Text Notes 800  5100 0    60   ~ 0
 Power Control\nNormally On\nLow - Off\n
 Text GLabel 1300 2650 0    60   Input ~ 0
@@ -521,17 +510,6 @@ Text GLabel 8350 5650 0    60   Input ~ 0
 EXT_GND
 Text GLabel 8350 5300 0    60   Input ~ 0
 EXT_GND
-$Comp
-L nrfmicro-rescue:VCC #PWR0116
-U 1 1 5C8047C6
-P 9550 5650
-F 0 "#PWR0116" H 9550 5500 50  0001 C CNN
-F 1 "VCC" H 9550 5800 50  0000 C CNN
-F 2 "" H 9550 5650 50  0001 C CNN
-F 3 "" H 9550 5650 50  0001 C CNN
-	1    9550 5650
-	0    1    1    0   
-$EndComp
 Text GLabel 9550 5300 2    60   Input ~ 0
 RESET
 Text GLabel 9550 4600 2    60   Input ~ 0
@@ -585,10 +563,10 @@ F 3 "" H 1900 6500 50  0001 L CNN
 	1    1900 6500
 	1    0    0    -1  
 $EndComp
-Text GLabel 2175 6050 2    60   Input ~ 0
+Text GLabel 2350 6050 2    60   Input ~ 0
 VBAT
 Wire Wire Line
-	2000 6050 2175 6050
+	2000 6050 2350 6050
 Text GLabel 2325 6850 2    60   Input ~ 0
 VDDH
 Text GLabel 3000 2950 2    60   Input ~ 0
@@ -778,6 +756,19 @@ F 1 "USB-C USB 2.0 MC-372" H 9982 2666 50  0000 C CNN
 F 2 "nrfmicro:USB-C-C168688" H 9982 2575 50  0000 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1800 50  0001 C CNN
 	1    9875 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 5650 2    60   Input ~ 0
+VDDH
+$Comp
+L nrfmicro-rescue:VCC #PWR0120
+U 1 1 5CD93483
+P 1550 4750
+F 0 "#PWR0120" H 1550 4600 50  0001 C CNN
+F 1 "VCC" H 1550 4900 50  0000 C CNN
+F 2 "" H 1550 4750 50  0001 C CNN
+F 3 "" H 1550 4750 50  0001 C CNN
+	1    1550 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
