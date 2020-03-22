@@ -60,21 +60,10 @@ Wire Wire Line
 	2650 4175 2650 4125
 Wire Wire Line
 	1700 6500 1050 6500
-$Comp
-L nrfmicro-rescue:R R2
-U 1 1 5B159927
-P 1050 7200
-F 0 "R2" H 1120 7246 50  0000 L CNN
-F 1 "100K" H 1120 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 980 7200 50  0001 C CNN
-F 3 "" H 1050 7200 50  0001 C CNN
-	1    1050 7200
-	1    0    0    -1  
-$EndComp
 Connection ~ 1050 6850
 Text Notes 875  6325 0    60   ~ 0
 Power and Filtering
-Text Notes 3000 6350 0    60   ~ 0
+Text Notes 3575 6475 0    60   ~ 0
 LiPo Charging\n
 Text Notes 7550 7500 0    60   ~ 0
 nrfmicro
@@ -91,42 +80,42 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5C701629
-P 4125 6850
-F 0 "R1" V 4332 6850 50  0000 C CNN
-F 1 "4.7K" V 4241 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4055 6850 50  0001 C CNN
-F 3 "~" H 4125 6850 50  0001 C CNN
-	1    4125 6850
+P 4500 6900
+F 0 "R1" V 4707 6900 50  0000 C CNN
+F 1 "4.7K" V 4616 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 6900 50  0001 C CNN
+F 3 "~" H 4500 6900 50  0001 C CNN
+	1    4500 6900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Battery_Management:MCP73831-2-OT U2
 U 1 1 5C7257C3
-P 3525 6950
-F 0 "U2" H 3525 7336 50  0000 C CNN
-F 1 "MCP73831" H 3525 7427 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3575 6700 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3375 6900 50  0001 C CNN
-	1    3525 6950
+P 3900 7000
+F 0 "U2" H 3900 7386 50  0000 C CNN
+F 1 "MCP73831" H 3900 7477 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3950 6750 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3750 6950 50  0001 C CNN
+	1    3900 7000
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5C89F8E4
-P 4375 7200
-F 0 "#PWR0103" H 4375 6950 50  0001 C CNN
-F 1 "GND" H 4380 7027 50  0000 C CNN
-F 2 "" H 4375 7200 50  0001 C CNN
-F 3 "" H 4375 7200 50  0001 C CNN
-	1    4375 7200
+P 4750 7250
+F 0 "#PWR0103" H 4750 7000 50  0001 C CNN
+F 1 "GND" H 4755 7077 50  0000 C CNN
+F 2 "" H 4750 7250 50  0001 C CNN
+F 3 "" H 4750 7250 50  0001 C CNN
+	1    4750 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3525 6550 3525 6650
+	3900 6600 3900 6700
 Wire Wire Line
-	3975 6850 3925 6850
+	4350 6900 4300 6900
 Wire Wire Line
-	3525 6550 4375 6550
+	3900 6600 4750 6600
 Wire Wire Line
 	1050 7350 1050 7400
 $Comp
@@ -141,15 +130,15 @@ F 3 "" H 1050 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4375 6550 4375 6850
+	4750 6600 4750 6900
 Wire Wire Line
-	4275 6850 4375 6850
-Connection ~ 4375 6850
+	4650 6900 4750 6900
+Connection ~ 4750 6900
 Wire Wire Line
-	4375 6850 4375 7200
-Text GLabel 3300 7250 0    60   Input ~ 0
+	4750 6900 4750 7250
+Text GLabel 3375 7300 0    60   Input ~ 0
 VBUS
-Text GLabel 4700 6450 2    60   Input ~ 0
+Text GLabel 3350 7100 0    60   Input ~ 0
 VBAT
 Text GLabel 950  6500 0    60   Input ~ 0
 VBUS
@@ -287,8 +276,6 @@ Wire Wire Line
 	3300 2350 3000 2350
 Wire Wire Line
 	3300 2550 3000 2550
-Wire Wire Line
-	3025 7050 3125 7050
 Text Label 5350 1400 2    60   ~ 0
 P0.17
 Text Label 6350 1700 0    60   ~ 0
@@ -390,9 +377,7 @@ Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
 Wire Wire Line
-	3025 6450 3025 7050
-Wire Wire Line
-	3525 7250 3300 7250
+	3900 7300 3375 7300
 $Comp
 L Transistor_FET:BS870 Q2
 U 1 1 5CD72AAF
@@ -496,7 +481,7 @@ F 3 "~" H 8400 2475 50  0001 C CNN
 $EndComp
 Text GLabel 8200 2475 0    60   Input ~ 0
 VBAT
-NoConn ~ 3125 6850
+NoConn ~ 3500 6900
 Text GLabel 9550 4950 2    60   Input ~ 0
 EXT_GND
 Text GLabel 8350 5650 0    60   Input ~ 0
@@ -543,8 +528,6 @@ Wire Wire Line
 	9550 5300 9250 5300
 Wire Wire Line
 	9250 5650 9550 5650
-Wire Wire Line
-	2000 6850 2325 6850
 $Comp
 L nrfmicro-rescue:BSS83P Q1
 U 1 1 5B1587C5
@@ -649,34 +632,29 @@ Wire Wire Line
 $Comp
 L nrfmicro-rescue:C C2
 U 1 1 5E599A24
-P 4600 6875
-F 0 "C2" H 4625 6975 50  0000 L CNN
-F 1 "10uF" H 4625 6775 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 6725 50  0001 C CNN
-F 3 "" H 4600 6875 50  0001 C CNN
-	1    4600 6875
+P 1750 7175
+F 0 "C2" H 1865 7221 50  0000 L CNN
+F 1 "10uF" H 1865 7130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1788 7025 50  0001 C CNN
+F 3 "" H 1750 7175 50  0001 C CNN
+	1    1750 7175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 6725 4600 6450
-Wire Wire Line
-	3025 6450 4600 6450
-Connection ~ 4600 6450
-Wire Wire Line
-	4600 6450 4700 6450
+	1750 7025 1750 6850
 $Comp
 L power:GND #PWR0104
 U 1 1 5E5A0156
-P 4600 7200
-F 0 "#PWR0104" H 4600 6950 50  0001 C CNN
-F 1 "GND" H 4605 7027 50  0000 C CNN
-F 2 "" H 4600 7200 50  0001 C CNN
-F 3 "" H 4600 7200 50  0001 C CNN
-	1    4600 7200
+P 1750 7400
+F 0 "#PWR0104" H 1750 7150 50  0001 C CNN
+F 1 "GND" H 1755 7227 50  0000 C CNN
+F 2 "" H 1750 7400 50  0001 C CNN
+F 3 "" H 1750 7400 50  0001 C CNN
+	1    1750 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 7025 4600 7200
+	1750 7325 1750 7400
 Text GLabel 10475 1800 2    60   Input ~ 0
 DATA-
 Text GLabel 10475 1900 2    60   Input ~ 0
@@ -774,7 +752,7 @@ F 3 "" H 2775 3675 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1550 6850 2000 6850
+	1550 6850 1750 6850
 Wire Wire Line
 	2650 3675 2650 3825
 Wire Wire Line
@@ -784,4 +762,22 @@ Wire Wire Line
 Connection ~ 2650 3675
 Wire Wire Line
 	1925 3675 2075 3675
+Wire Wire Line
+	3350 7100 3500 7100
+Connection ~ 1750 6850
+Wire Wire Line
+	1750 6850 2000 6850
+Wire Wire Line
+	2000 6850 2325 6850
+$Comp
+L nrfmicro-rescue:R R2
+U 1 1 5B159927
+P 1050 7200
+F 0 "R2" H 1120 7246 50  0000 L CNN
+F 1 "100K" H 1120 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 980 7200 50  0001 C CNN
+F 3 "" H 1050 7200 50  0001 C CNN
+	1    1050 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
