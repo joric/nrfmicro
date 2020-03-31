@@ -781,17 +781,6 @@ F 3 "" H 1050 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small G2
-U 1 1 5E84C361
-P 8975 3400
-F 0 "G2" H 9222 3425 50  0000 L CNN
-F 1 "Logo_Open_Hardware_Small" H 8975 3175 50  0001 C CNN
-F 2 "Symbol:KiCad-Logo2_5mm_SilkScreen" H 8975 3400 50  0001 C CNN
-F 3 "~" H 8975 3400 50  0001 C CNN
-	1    8975 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Small G1
 U 1 1 5E8498C8
 P 8300 3425
