@@ -780,4 +780,37 @@ F 3 "" H 1050 7200 50  0001 C CNN
 	1    1050 7200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small G2
+U 1 1 5E84C361
+P 8975 3400
+F 0 "G2" H 9222 3425 50  0000 L CNN
+F 1 "Logo_Open_Hardware_Small" H 8975 3175 50  0001 C CNN
+F 2 "Symbol:FCC-Logo_7.3x6mm_SilkScreen" H 8975 3400 50  0001 C CNN
+F 3 "~" H 8975 3400 50  0001 C CNN
+	1    8975 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small G3
+U 1 1 5E84C367
+P 9650 3400
+F 0 "G3" H 9897 3425 50  0000 L CNN
+F 1 "Logo_Open_Hardware_Small" H 9650 3175 50  0001 C CNN
+F 2 "Symbol:WEEE-Logo_4.2x6mm_SilkScreen" H 9650 3400 50  0001 C CNN
+F 3 "~" H 9650 3400 50  0001 C CNN
+	1    9650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small G1
+U 1 1 5E8498C8
+P 8300 3425
+F 0 "G1" H 8547 3450 50  0000 L CNN
+F 1 "Logo_Open_Hardware_Small" H 8300 3200 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 8300 3425 50  0001 C CNN
+F 3 "~" H 8300 3425 50  0001 C CNN
+	1    8300 3425
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
