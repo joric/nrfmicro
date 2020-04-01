@@ -780,15 +780,4 @@ F 3 "" H 1050 7200 50  0001 C CNN
 	1    1050 7200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small G1
-U 1 1 5E8498C8
-P 8300 3425
-F 0 "G1" H 8547 3450 50  0000 L CNN
-F 1 "Logo_Open_Hardware_Small" H 8300 3200 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 8300 3425 50  0001 C CNN
-F 3 "~" H 8300 3425 50  0001 C CNN
-	1    8300 3425
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
