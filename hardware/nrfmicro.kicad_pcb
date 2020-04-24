@@ -754,9 +754,9 @@
       (net 1 GND))
     (pad 18 thru_hole rect (at 2.092 -0.023) (size 0.65 1) (drill 0.5) (layers *.Cu *.Mask)
       (net 44 0.04))
-    (model ${KIPRJMOD}/nrfmicro.pretty/3d/E73-2G4M08S1C.step
+    (model ${KIPRJMOD}/nrfmicro.pretty/3d/USB-C-C168688.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz 0 0 0))
     )
   )
