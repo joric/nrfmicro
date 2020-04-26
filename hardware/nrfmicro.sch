@@ -372,40 +372,16 @@ F 3 "~" H 8500 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2000 6050 2000 6300
+	2000 6200 2000 6300
 Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
 Wire Wire Line
 	3900 7300 3375 7300
-$Comp
-L Transistor_FET:BS870 Q2
-U 1 1 5CD72AAF
-P 1850 5250
-F 0 "Q2" H 2056 5296 50  0000 L CNN
-F 1 "AO3406" H 2056 5205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2050 5175 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds11302.pdf" H 1850 5250 50  0001 L CNN
-	1    1850 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L nrfmicro-rescue:GND #PWR0119
-U 1 1 5CD77F64
-P 1950 5450
-F 0 "#PWR0119" H 1950 5200 50  0001 C CNN
-F 1 "GND" H 1950 5300 50  0000 C CNN
-F 2 "" H 1950 5450 50  0001 C CNN
-F 3 "" H 1950 5450 50  0001 C CNN
-	1    1950 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 5050 1950 4900
-Wire Wire Line
-	1950 4900 2400 4900
-Text GLabel 2400 4900 2    60   Input ~ 0
-EXT_GND
+Text GLabel 1950 4900 1    60   Input ~ 0
+EXT_VCC
 Text GLabel 1350 5250 0    60   Input ~ 0
 POWER_PIN
 Wire Wire Line
@@ -482,12 +458,6 @@ $EndComp
 Text GLabel 8200 2475 0    60   Input ~ 0
 VBAT
 NoConn ~ 3500 6900
-Text GLabel 9550 4950 2    60   Input ~ 0
-EXT_GND
-Text GLabel 8350 5650 0    60   Input ~ 0
-EXT_GND
-Text GLabel 8350 5300 0    60   Input ~ 0
-EXT_GND
 Text GLabel 9550 5300 2    60   Input ~ 0
 RESET
 Text GLabel 9550 4600 2    60   Input ~ 0
@@ -539,10 +509,10 @@ F 3 "" H 1900 6500 50  0001 L CNN
 	1    1900 6500
 	1    0    0    -1  
 $EndComp
-Text GLabel 2350 6050 2    60   Input ~ 0
+Text GLabel 2325 6200 2    60   Input ~ 0
 VBAT
 Wire Wire Line
-	2000 6050 2350 6050
+	2000 6200 2325 6200
 Text GLabel 2325 6850 2    60   Input ~ 0
 VDDH
 Text GLabel 3000 2950 2    60   Input ~ 0
@@ -728,7 +698,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1
 	1    0    0    -1  
 $EndComp
 Text GLabel 9550 5650 2    60   Input ~ 0
-VDDH
+EXT_VCC
 $Comp
 L nrfmicro-rescue:VCC #PWR0120
 U 1 1 5CD93483
@@ -779,5 +749,53 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 980 7200 50  0001 C CNN
 F 3 "" H 1050 7200 50  0001 C CNN
 	1    1050 7200
 	1    0    0    -1  
+$EndComp
+Text GLabel 1950 5550 3    60   Input ~ 0
+VDDH
+$Comp
+L nrfmicro-rescue:BSS83P Q2
+U 1 1 5EA66E1B
+P 1850 5250
+F 0 "Q2" H 2050 5325 50  0000 L CNN
+F 1 "AO3407" H 2050 5250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2050 5175 50  0001 L CIN
+F 3 "" H 1850 5250 50  0001 L CNN
+	1    1850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5550 1950 5450
+$Comp
+L nrfmicro-rescue:GND #PWR?
+U 1 1 5EA776B5
+P 9550 4950
+F 0 "#PWR?" H 9550 4700 50  0001 C CNN
+F 1 "GND" H 9550 4800 50  0000 C CNN
+F 2 "" H 9550 4950 50  0001 C CNN
+F 3 "" H 9550 4950 50  0001 C CNN
+	1    9550 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR?
+U 1 1 5EA78F53
+P 8350 5300
+F 0 "#PWR?" H 8350 5050 50  0001 C CNN
+F 1 "GND" H 8350 5150 50  0000 C CNN
+F 2 "" H 8350 5300 50  0001 C CNN
+F 3 "" H 8350 5300 50  0001 C CNN
+	1    8350 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR?
+U 1 1 5EA7A77D
+P 8350 5650
+F 0 "#PWR?" H 8350 5400 50  0001 C CNN
+F 1 "GND" H 8350 5500 50  0000 C CNN
+F 2 "" H 8350 5650 50  0001 C CNN
+F 3 "" H 8350 5650 50  0001 C CNN
+	1    8350 5650
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
