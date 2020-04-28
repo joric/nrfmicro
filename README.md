@@ -4,7 +4,8 @@ This is an experimental (untested) devel branch
 
 ## Pictures
 
-![](hardware/front.png)
-![](hardware/back.png)
+front | back
+---|---
+![](hardware/plot/nrfmicro-Front.png)|![](hardware/plot/nrfmicro-Back.png)
 
 * https://github.com/joric/nrfmicro/wiki

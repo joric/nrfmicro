@@ -700,17 +700,6 @@ $EndComp
 Text GLabel 9550 5650 2    60   Input ~ 0
 EXT_VCC
 $Comp
-L nrfmicro-rescue:VCC #PWR0120
-U 1 1 5CD93483
-P 1550 4750
-F 0 "#PWR0120" H 1550 4600 50  0001 C CNN
-F 1 "VCC" H 1550 4900 50  0000 C CNN
-F 2 "" H 1550 4750 50  0001 C CNN
-F 3 "" H 1550 4750 50  0001 C CNN
-	1    1550 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L nrfmicro-rescue:VCC #PWR0112
 U 1 1 5E76CB59
 P 2775 3675
@@ -797,5 +786,16 @@ F 2 "" H 8350 5650 50  0001 C CNN
 F 3 "" H 8350 5650 50  0001 C CNN
 	1    8350 5650
 	0    1    1    0   
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR?
+U 1 1 5EA86D65
+P 1550 4750
+F 0 "#PWR?" H 1550 4500 50  0001 C CNN
+F 1 "GND" H 1550 4600 50  0000 C CNN
+F 2 "" H 1550 4750 50  0001 C CNN
+F 3 "" H 1550 4750 50  0001 C CNN
+	1    1550 4750
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
