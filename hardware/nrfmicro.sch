@@ -63,7 +63,7 @@ Wire Wire Line
 Connection ~ 1050 6850
 Text Notes 875  6325 0    60   ~ 0
 Power and Filtering
-Text Notes 3575 6475 0    60   ~ 0
+Text Notes 3875 6275 0    60   ~ 0
 LiPo Charging\n
 Text Notes 7550 7500 0    60   ~ 0
 nrfmicro
@@ -80,42 +80,42 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5C701629
-P 4500 6900
-F 0 "R1" V 4707 6900 50  0000 C CNN
-F 1 "10K" V 4616 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 6900 50  0001 C CNN
-F 3 "~" H 4500 6900 50  0001 C CNN
-	1    4500 6900
+P 4800 6700
+F 0 "R1" V 5007 6700 50  0000 C CNN
+F 1 "10K" V 4916 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 6700 50  0001 C CNN
+F 3 "~" H 4800 6700 50  0001 C CNN
+	1    4800 6700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Battery_Management:MCP73831-2-OT U2
 U 1 1 5C7257C3
-P 3900 7000
-F 0 "U2" H 3900 7386 50  0000 C CNN
-F 1 "MCP73831" H 3900 7477 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3950 6750 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3750 6950 50  0001 C CNN
-	1    3900 7000
+P 4200 6800
+F 0 "U2" H 4200 7186 50  0000 C CNN
+F 1 "MCP73831" H 4200 7277 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4250 6550 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 4050 6750 50  0001 C CNN
+	1    4200 6800
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5C89F8E4
-P 4750 7250
-F 0 "#PWR0103" H 4750 7000 50  0001 C CNN
-F 1 "GND" H 4755 7077 50  0000 C CNN
-F 2 "" H 4750 7250 50  0001 C CNN
-F 3 "" H 4750 7250 50  0001 C CNN
-	1    4750 7250
+P 5050 7050
+F 0 "#PWR0103" H 5050 6800 50  0001 C CNN
+F 1 "GND" H 5055 6877 50  0000 C CNN
+F 2 "" H 5050 7050 50  0001 C CNN
+F 3 "" H 5050 7050 50  0001 C CNN
+	1    5050 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 6600 3900 6700
+	4200 6400 4200 6500
 Wire Wire Line
-	4350 6900 4300 6900
+	4650 6700 4600 6700
 Wire Wire Line
-	3900 6600 4750 6600
+	4200 6400 5050 6400
 Wire Wire Line
 	1050 7350 1050 7400
 $Comp
@@ -130,15 +130,15 @@ F 3 "" H 1050 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 6600 4750 6900
+	5050 6400 5050 6700
 Wire Wire Line
-	4650 6900 4750 6900
-Connection ~ 4750 6900
+	4950 6700 5050 6700
+Connection ~ 5050 6700
 Wire Wire Line
-	4750 6900 4750 7250
-Text GLabel 3375 7300 0    60   Input ~ 0
+	5050 6700 5050 7050
+Text GLabel 3275 7100 0    60   Input ~ 0
 VBUS
-Text GLabel 3350 7100 0    60   Input ~ 0
+Text GLabel 3250 6900 0    60   Input ~ 0
 VBAT
 Text GLabel 950  6500 0    60   Input ~ 0
 VBUS
@@ -377,7 +377,7 @@ Wire Wire Line
 	1050 6500 950  6500
 Connection ~ 1050 6500
 Wire Wire Line
-	3900 7300 3375 7300
+	4200 7100 3275 7100
 Wire Wire Line
 	1950 5050 1950 4900
 Text GLabel 1950 4900 1    60   Input ~ 0
@@ -457,7 +457,7 @@ F 3 "~" H 8400 2475 50  0001 C CNN
 $EndComp
 Text GLabel 8200 2475 0    60   Input ~ 0
 VBAT
-NoConn ~ 3500 6900
+NoConn ~ 3800 6700
 Text GLabel 9550 5300 2    60   Input ~ 0
 RESET
 Text GLabel 9550 4600 2    60   Input ~ 0
@@ -721,8 +721,6 @@ Wire Wire Line
 Connection ~ 2650 3675
 Wire Wire Line
 	1925 3675 2075 3675
-Wire Wire Line
-	3350 7100 3500 7100
 Connection ~ 1750 6850
 Wire Wire Line
 	1750 6850 2000 6850
@@ -755,10 +753,10 @@ $EndComp
 Wire Wire Line
 	1950 5550 1950 5450
 $Comp
-L nrfmicro-rescue:GND #PWR?
+L nrfmicro-rescue:GND #PWR0113
 U 1 1 5EA776B5
 P 9550 4950
-F 0 "#PWR?" H 9550 4700 50  0001 C CNN
+F 0 "#PWR0113" H 9550 4700 50  0001 C CNN
 F 1 "GND" H 9550 4800 50  0000 C CNN
 F 2 "" H 9550 4950 50  0001 C CNN
 F 3 "" H 9550 4950 50  0001 C CNN
@@ -766,10 +764,10 @@ F 3 "" H 9550 4950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nrfmicro-rescue:GND #PWR?
+L nrfmicro-rescue:GND #PWR0114
 U 1 1 5EA78F53
 P 8350 5300
-F 0 "#PWR?" H 8350 5050 50  0001 C CNN
+F 0 "#PWR0114" H 8350 5050 50  0001 C CNN
 F 1 "GND" H 8350 5150 50  0000 C CNN
 F 2 "" H 8350 5300 50  0001 C CNN
 F 3 "" H 8350 5300 50  0001 C CNN
@@ -777,10 +775,10 @@ F 3 "" H 8350 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L nrfmicro-rescue:GND #PWR?
+L nrfmicro-rescue:GND #PWR0115
 U 1 1 5EA7A77D
 P 8350 5650
-F 0 "#PWR?" H 8350 5400 50  0001 C CNN
+F 0 "#PWR0115" H 8350 5400 50  0001 C CNN
 F 1 "GND" H 8350 5500 50  0000 C CNN
 F 2 "" H 8350 5650 50  0001 C CNN
 F 3 "" H 8350 5650 50  0001 C CNN
@@ -788,14 +786,29 @@ F 3 "" H 8350 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L nrfmicro-rescue:GND #PWR?
+L nrfmicro-rescue:GND #PWR0116
 U 1 1 5EA86D65
 P 1550 4750
-F 0 "#PWR?" H 1550 4500 50  0001 C CNN
+F 0 "#PWR0116" H 1550 4500 50  0001 C CNN
 F 1 "GND" H 1550 4600 50  0000 C CNN
 F 2 "" H 1550 4750 50  0001 C CNN
 F 3 "" H 1550 4750 50  0001 C CNN
 	1    1550 4750
 	-1   0    0    1   
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5EAEDDB5
+P 3525 6900
+F 0 "JP1" H 3525 7105 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 3525 7014 50  0000 C CNN
+F 2 "nrfmicro:jumper" H 3525 6900 50  0001 C CNN
+F 3 "~" H 3525 6900 50  0001 C CNN
+	1    3525 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6900 3375 6900
+Wire Wire Line
+	3675 6900 3800 6900
 $EndSCHEMATC
