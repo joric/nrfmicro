@@ -797,11 +797,11 @@ F 3 "" H 1550 4750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP1
+L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 5EAEDDB5
 P 3525 6900
 F 0 "JP1" H 3525 7105 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 3525 7014 50  0000 C CNN
+F 1 "Solder Jumper" H 3525 7014 50  0000 C CNN
 F 2 "nrfmicro:jumper" H 3525 6900 50  0001 C CNN
 F 3 "~" H 3525 6900 50  0001 C CNN
 	1    3525 6900
