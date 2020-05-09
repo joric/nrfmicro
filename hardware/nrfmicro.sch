@@ -237,7 +237,7 @@ SWO
 Wire Wire Line
 	1650 3050 1425 3050
 Text Notes 4200 3350 0    60   ~ 0
-Existing pins:\n\nP0.02 P0.03 P0.04 P0.05 P0.06 P0.07 P0.08 P0.09\nP0.10 P0.12 P0.13 P0.15 P0.17 P0.18\nP0.20 P0.22 P0.24 P0.26 P0.28 P0.29\nP0.30 P0.31\n\nP1.00 P1.02 P1.04 P1.06 P1.09\nP1.10 P1.11 P1.13\n\n
+E73-2G4M08S1C pins:\n\nP0.02 P0.03 P0.04 P0.05 P0.06 P0.07 P0.08 P0.09\nP0.10 P0.12 P0.13 P0.15 P0.17 P0.18\nP0.20 P0.22 P0.24 P0.26 P0.28 P0.29\nP0.30 P0.31\n\nP1.00 P1.02 P1.04 P1.06 P1.09\nP1.10 P1.11 P1.13\n\n
 Text Notes 6750 3250 0    60   ~ 0
 Feather pins:\n\nP1.15 LED1 x\nP1.10 LED2\nP0.15 BTN1\nP0.19 BTN2 x\nP0.16 NEOPIXEL x\nP0.08 RX\nP0.06 TX\n\nP1.02 DFU\nP0.18 RESET\n
 Text Label 3000 1650 0    60   ~ 0
@@ -281,20 +281,6 @@ Wire Wire Line
 	1650 2350 1000 2350
 Wire Wire Line
 	1650 2550 1000 2550
-Text Label 6350 900  0    60   ~ 0
-S5
-Text Label 6350 1000 0    60   ~ 0
-S6
-Text Label 5350 900  2    60   ~ 0
-S1
-Text Label 5350 1000 2    60   ~ 0
-S2
-Text Label 5350 1100 2    60   ~ 0
-S3
-Text Label 6350 1200 0    60   ~ 0
-S8
-Text Label 6350 1100 0    60   ~ 0
-S7
 $Comp
 L Device:R R3
 U 1 1 5CAA680B
@@ -330,8 +316,6 @@ Text GLabel 1300 2650 0    60   Input ~ 0
 POWER_PIN
 Wire Wire Line
 	1300 2650 1650 2650
-Text Label 5350 1200 2    60   ~ 0
-S4
 Text Label 5350 1300 2    60   ~ 0
 P0.15
 Text GLabel 3300 1650 2    60   Input ~ 0
@@ -377,46 +361,10 @@ F 3 "~" H 8400 2475 50  0001 C CNN
 $EndComp
 Text GLabel 8200 2475 0    60   Input ~ 0
 VBAT
-Text GLabel 9550 5300 2    60   Input ~ 0
+Text GLabel 6400 1100 2    60   Input ~ 0
 RESET
-Text GLabel 9550 4600 2    60   Input ~ 0
+Text GLabel 6400 900  2    60   Input ~ 0
 VBAT
-Text Label 9250 5650 2    60   ~ 0
-S8
-Text Label 9250 5300 2    60   ~ 0
-S7
-Text Label 9250 4950 2    60   ~ 0
-S6
-Text Label 9250 4600 2    60   ~ 0
-S5
-Text Label 8650 5650 0    60   ~ 0
-S4
-Text Label 8650 5300 0    60   ~ 0
-S3
-Text GLabel 8350 4950 0    60   Input ~ 0
-RXD
-Text Label 8650 4950 0    60   ~ 0
-S2
-Text GLabel 8350 4600 0    60   Input ~ 0
-TXD
-Text Label 8650 4600 0    60   ~ 0
-S1
-Wire Wire Line
-	8350 4600 8650 4600
-Wire Wire Line
-	8350 4950 8650 4950
-Wire Wire Line
-	8350 5300 8650 5300
-Wire Wire Line
-	8350 5650 8650 5650
-Wire Wire Line
-	9250 4600 9550 4600
-Wire Wire Line
-	9550 4950 9250 4950
-Wire Wire Line
-	9550 5300 9250 5300
-Wire Wire Line
-	9250 5650 9550 5650
 $Comp
 L nrfmicro-rescue:BSS83P Q1
 U 1 1 5B1587C5
@@ -463,10 +411,10 @@ F 3 "~" H 1850 4425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L Device:R R1
 U 1 1 5E62E248
 P 6275 4300
-F 0 "R6" H 6345 4346 50  0000 L CNN
+F 0 "R1" H 6345 4346 50  0000 L CNN
 F 1 "820K" H 6345 4255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6205 4300 50  0001 C CNN
 F 3 "~" H 6275 4300 50  0001 C CNN
@@ -474,10 +422,10 @@ F 3 "~" H 6275 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R2
 U 1 1 5E6319B8
 P 6275 4725
-F 0 "R5" H 6345 4771 50  0000 L CNN
+F 0 "R2" H 6345 4771 50  0000 L CNN
 F 1 "2M" H 6345 4680 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6205 4725 50  0001 C CNN
 F 3 "~" H 6275 4725 50  0001 C CNN
@@ -612,7 +560,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1
 	1    9875 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9550 5650 2    60   Input ~ 0
+Text GLabel 6775 1200 2    60   Input ~ 0
 EXT_VCC
 $Comp
 L nrfmicro-rescue:VCC #PWR0112
@@ -642,10 +590,10 @@ Wire Wire Line
 Wire Wire Line
 	2275 6425 2675 6425
 $Comp
-L nrfmicro-rescue:R R2
+L nrfmicro-rescue:R R5
 U 1 1 5B159927
 P 1325 6775
-F 0 "R2" H 1395 6821 50  0000 L CNN
+F 0 "R5" H 1395 6821 50  0000 L CNN
 F 1 "100K" H 1395 6730 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1255 6775 50  0001 C CNN
 F 3 "" H 1325 6775 50  0001 C CNN
@@ -655,34 +603,23 @@ $EndComp
 $Comp
 L nrfmicro-rescue:GND #PWR0113
 U 1 1 5EA776B5
-P 9550 4950
-F 0 "#PWR0113" H 9550 4700 50  0001 C CNN
-F 1 "GND" H 9550 4800 50  0000 C CNN
-F 2 "" H 9550 4950 50  0001 C CNN
-F 3 "" H 9550 4950 50  0001 C CNN
-	1    9550 4950
+P 6775 1000
+F 0 "#PWR0113" H 6775 750 50  0001 C CNN
+F 1 "GND" H 6775 850 50  0000 C CNN
+F 2 "" H 6775 1000 50  0001 C CNN
+F 3 "" H 6775 1000 50  0001 C CNN
+	1    6775 1000
 	0    -1   -1   0   
-$EndComp
-$Comp
-L nrfmicro-rescue:GND #PWR0114
-U 1 1 5EA78F53
-P 8350 5300
-F 0 "#PWR0114" H 8350 5050 50  0001 C CNN
-F 1 "GND" H 8350 5150 50  0000 C CNN
-F 2 "" H 8350 5300 50  0001 C CNN
-F 3 "" H 8350 5300 50  0001 C CNN
-	1    8350 5300
-	0    1    1    0   
 $EndComp
 $Comp
 L nrfmicro-rescue:GND #PWR0115
 U 1 1 5EA7A77D
-P 8350 5650
-F 0 "#PWR0115" H 8350 5400 50  0001 C CNN
-F 1 "GND" H 8350 5500 50  0000 C CNN
-F 2 "" H 8350 5650 50  0001 C CNN
-F 3 "" H 8350 5650 50  0001 C CNN
-	1    8350 5650
+P 4925 1200
+F 0 "#PWR0115" H 4925 950 50  0001 C CNN
+F 1 "GND" H 4925 1050 50  0000 C CNN
+F 2 "" H 4925 1200 50  0001 C CNN
+F 3 "" H 4925 1200 50  0001 C CNN
+	1    4925 1200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -714,10 +651,10 @@ VDDH
 Wire Wire Line
 	4575 4525 4675 4525
 $Comp
-L Device:R R1
+L Device:R R6
 U 1 1 5EB62471
 P 5700 4725
-F 0 "R1" V 5907 4725 50  0000 C CNN
+F 0 "R6" V 5907 4725 50  0000 C CNN
 F 1 "1K" V 5816 4725 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 4725 50  0001 C CNN
 F 3 "~" H 5700 4725 50  0001 C CNN
@@ -800,4 +737,35 @@ Text Notes 3975 4125 0    60   ~ 0
 External VCC
 Wire Wire Line
 	5700 4875 5700 4975
+$Comp
+L nrfmicro-rescue:GND #PWR0114
+U 1 1 5EA78F53
+P 5100 1100
+F 0 "#PWR0114" H 5100 850 50  0001 C CNN
+F 1 "GND" H 5100 950 50  0000 C CNN
+F 2 "" H 5100 1100 50  0001 C CNN
+F 3 "" H 5100 1100 50  0001 C CNN
+	1    5100 1100
+	0    1    1    0   
+$EndComp
+Text GLabel 5300 1000 0    60   Input ~ 0
+RXD
+Text GLabel 5300 900  0    60   Input ~ 0
+TXD
+Wire Wire Line
+	5300 900  5350 900 
+Wire Wire Line
+	5300 1000 5350 1000
+Wire Wire Line
+	5350 1100 5100 1100
+Wire Wire Line
+	5350 1200 4925 1200
+Wire Wire Line
+	6350 1000 6775 1000
+Wire Wire Line
+	6350 1200 6775 1200
+Wire Wire Line
+	6350 1100 6400 1100
+Wire Wire Line
+	6350 900  6400 900 
 $EndSCHEMATC
