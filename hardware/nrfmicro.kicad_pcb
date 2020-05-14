@@ -1107,7 +1107,7 @@
   (gr_line (start 94.7723 140.4327) (end 94.785 109.686) (layer Edge.Cuts) (width 0.15) (tstamp 5C6E8892))
   (gr_line (start 112.819 109.686) (end 112.8317 140.4327) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 111.5617 141.7027) (end 96.0423 141.7027) (layer Edge.Cuts) (width 0.15))
-  (gr_text "nRFMicro\n1.2" (at 103.8655 139.531) (layer B.SilkS)
+  (gr_text "nRFMicro\n1.2" (at 103.82486 139.21096) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
 
