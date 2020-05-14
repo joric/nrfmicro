@@ -565,10 +565,10 @@
     (path /5C7001D3)
     (clearance 0.12)
     (attr smd)
-    (fp_text reference U1 (at 16.637 4.572) (layer F.SilkS)
+    (fp_text reference U1 (at 8.44296 -0.02286) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
-    (fp_text value E73-2G4M08S1C (at 16.636775 -0.888533 unlocked) (layer F.SilkS)
+    (fp_text value E73-2G4M08S1C (at 10.83056 -3.14706 90 unlocked) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_line (start -0.127 -6.604) (end -0.127 6.604) (layer F.Fab) (width 0.15))
