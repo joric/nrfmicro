@@ -230,8 +230,6 @@ TXD
 Text GLabel 1000 2550 0    60   Input ~ 0
 RXD
 Wire Wire Line
-	1150 3150 1650 3150
-Wire Wire Line
 	1650 2350 1000 2350
 Wire Wire Line
 	1650 2550 1000 2550
@@ -257,7 +255,7 @@ F 3 "~" H 5750 4650 50  0001 C CNN
 	1    5750 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4975 4525 1    60   Input ~ 0
+Text GLabel 4500 4475 2    60   Input ~ 0
 EXT_VCC
 Text GLabel 1300 2650 0    60   Input ~ 0
 POWER_PIN
@@ -338,49 +336,8 @@ F 3 "~" H 1725 4875 50  0001 C CNN
 	1    1725 4875
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5E62E248
-P 3550 4650
-F 0 "R1" H 3620 4696 50  0000 L CNN
-F 1 "820K" H 3620 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 4650 50  0001 C CNN
-F 3 "~" H 3550 4650 50  0001 C CNN
-	1    3550 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5E6319B8
-P 3550 5100
-F 0 "R2" H 3620 5146 50  0000 L CNN
-F 1 "2M" H 3620 5055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 5100 50  0001 C CNN
-F 3 "~" H 3550 5100 50  0001 C CNN
-	1    3550 5100
-	1    0    0    -1  
-$EndComp
-Text GLabel 3550 4425 1    60   Input ~ 0
-VBAT
-$Comp
-L nrfmicro-rescue:GND #PWR0102
-U 1 1 5E636FE3
-P 3550 5325
-F 0 "#PWR0102" H 3550 5075 50  0001 C CNN
-F 1 "GND" H 3555 5152 50  0000 C CNN
-F 2 "" H 3550 5325 50  0001 C CNN
-F 3 "" H 3550 5325 50  0001 C CNN
-	1    3550 5325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 5250 3550 5325
-Text GLabel 3450 4875 0    60   Input ~ 0
-BATTERY_PIN
 Text Label 1650 2750 2    60   ~ 0
 P0.04
-Text GLabel 1200 2750 0    60   Input ~ 0
-BATTERY_PIN
 Wire Wire Line
 	1650 2750 1200 2750
 Text GLabel 10475 1800 2    60   Input ~ 0
@@ -501,46 +458,22 @@ F 3 "~" H 1650 4150 50  0001 C CNN
 $EndComp
 Text GLabel 1450 4150 0    60   Input ~ 0
 BLUE_LED
-$Comp
-L Battery_Management:MCP73811T-420I-OT U2
-U 1 1 5EBAEB8D
-P 4800 6750
-F 0 "U2" H 5244 6796 50  0000 L CNN
-F 1 "MCP73811T-420I-OT" H 5244 6705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4850 6500 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22036b.pdf" H 4550 7000 50  0001 C CNN
-	1    4800 6750
-	1    0    0    -1  
-$EndComp
-Text GLabel 5425 6650 2    60   Input ~ 0
+Text GLabel 6050 6425 2    60   Input ~ 0
 VBAT
-Text GLabel 4800 6375 1    60   Input ~ 0
+Text GLabel 4300 6225 0    60   Input ~ 0
 VBUS
-$Comp
-L power:GND #PWR0103
-U 1 1 5C89F8E4
-P 4800 7050
-F 0 "#PWR0103" H 4800 6800 50  0001 C CNN
-F 1 "GND" H 4805 6877 50  0000 C CNN
-F 2 "" H 4800 7050 50  0001 C CNN
-F 3 "" H 4800 7050 50  0001 C CNN
-	1    4800 7050
-	1    0    0    -1  
-$EndComp
-Text Notes 4475 6000 0    60   ~ 0
+Text Notes 4625 5875 0    60   ~ 0
 LiPo Charging\n
-Text GLabel 4325 6650 0    60   Input ~ 0
-CHG_EN
-Text GLabel 4325 6850 0    60   Input ~ 0
-CHG_PROG
-Text GLabel 1300 2450 0    60   Input ~ 0
-CHG_PROG
+Text GLabel 5325 6625 2    60   Input ~ 0
+STAT
+Text GLabel 4300 6625 0    60   Input ~ 0
+PROG
+Text GLabel 1200 2750 0    60   Input ~ 0
+PROG
 Wire Wire Line
 	1300 2450 1650 2450
-Text GLabel 1150 3150 0    60   Input ~ 0
-CHG_EN
-Wire Wire Line
-	5200 6650 5425 6650
+Text GLabel 1300 2450 0    60   Input ~ 0
+STAT
 Text Notes 1300 4700 0    60   ~ 0
 High Voltage Mode
 $Comp
@@ -576,14 +509,6 @@ Wire Wire Line
 	6350 900  6400 900 
 Wire Wire Line
 	1450 4150 1500 4150
-Wire Wire Line
-	4325 6650 4400 6650
-Wire Wire Line
-	4325 6850 4400 6850
-Wire Wire Line
-	3550 4425 3550 4500
-Wire Wire Line
-	4800 6375 4800 6450
 $Comp
 L nrfmicro-rescue:R R5
 U 1 1 5B159927
@@ -688,31 +613,11 @@ Wire Wire Line
 Connection ~ 2375 6550
 Wire Wire Line
 	2375 6400 2375 6550
-Text Notes 2975 4050 0    60   ~ 0
-Battery monitor
-Wire Wire Line
-	3550 4800 3550 4875
-Wire Wire Line
-	3450 4875 3550 4875
-Connection ~ 3550 4875
-Wire Wire Line
-	3550 4875 3550 4950
 Wire Wire Line
 	1425 6200 1425 6550
-Text GLabel 4675 4725 0    60   Input ~ 0
+Text GLabel 3775 4575 0    60   Input ~ 0
 POWER_PIN
-$Comp
-L nrfmicro-rescue:BSS83P Q2
-U 1 1 5EBC38D9
-P 4875 4725
-F 0 "Q2" H 5075 4800 50  0000 L CNN
-F 1 "AO3407" H 5075 4725 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5075 4650 50  0001 L CIN
-F 3 "" H 4875 4725 50  0001 L CNN
-	1    4875 4725
-	1    0    0    -1  
-$EndComp
-Text GLabel 4975 4925 3    60   Input ~ 0
+Text GLabel 3650 4475 0    60   Input ~ 0
 VDDH
 Text GLabel 1400 2850 0    60   Input ~ 0
 VDD
@@ -733,6 +638,112 @@ F 3 "" H 2050 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 4150 1900 4150
-Text Notes 3800 7325 0    60   ~ 0
-0 - 85 mA\n1 - 450 mA\nint. pull-down\nfor 73831
+$Comp
+L Regulator_Linear:AP2112K-3.3 U2
+U 1 1 5EBF7400
+P 4075 4575
+F 0 "U2" H 4075 4917 50  0000 C CNN
+F 1 "AP2112K-3.3" H 4075 4826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4075 4900 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 4075 4675 50  0001 C CNN
+	1    4075 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR0102
+U 1 1 5EC0A593
+P 4075 4875
+F 0 "#PWR0102" H 4075 4625 50  0001 C CNN
+F 1 "GND" H 4075 4725 50  0000 C CNN
+F 2 "" H 4075 4875 50  0001 C CNN
+F 3 "" H 4075 4875 50  0001 C CNN
+	1    4075 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrfmicro-rescue:MBR0520 D3
+U 1 1 5EC15749
+P 4075 3900
+F 0 "D3" H 4075 3684 50  0000 C CNN
+F 1 "1N5819" H 4075 3775 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 4075 3725 50  0001 C CNN
+F 3 "" H 4075 3900 50  0001 C CNN
+	1    4075 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 4475 4425 4475
+Wire Wire Line
+	3650 4475 3750 4475
+Wire Wire Line
+	3925 3900 3750 3900
+Wire Wire Line
+	3750 3900 3750 4475
+Connection ~ 3750 4475
+Wire Wire Line
+	3750 4475 3775 4475
+Wire Wire Line
+	4225 3900 4425 3900
+Wire Wire Line
+	4425 3900 4425 4475
+Connection ~ 4425 4475
+Wire Wire Line
+	4425 4475 4500 4475
+$Comp
+L nrfmicro-rescue:C C3
+U 1 1 5EC27E30
+P 5800 6725
+F 0 "C3" H 5825 6825 50  0000 L CNN
+F 1 "10uF" H 5825 6625 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 6575 50  0001 C CNN
+F 3 "" H 5800 6725 50  0001 C CNN
+	1    5800 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR0106
+U 1 1 5EC27E36
+P 5800 6925
+F 0 "#PWR0106" H 5800 6675 50  0001 C CNN
+F 1 "GND" H 5800 6775 50  0000 C CNN
+F 2 "" H 5800 6925 50  0001 C CNN
+F 3 "" H 5800 6925 50  0001 C CNN
+	1    5800 6925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6925 5800 6875
+Wire Wire Line
+	5800 6575 5800 6425
+Wire Wire Line
+	5800 6425 6050 6425
+$Comp
+L nrfmicro-rescue:GND #PWR0112
+U 1 1 5EC35BD6
+P 4925 6825
+F 0 "#PWR0112" H 4925 6575 50  0001 C CNN
+F 1 "GND" H 4925 6675 50  0000 C CNN
+F 2 "" H 4925 6825 50  0001 C CNN
+F 3 "" H 4925 6825 50  0001 C CNN
+	1    4925 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 6225 4300 6225
+Wire Wire Line
+	5325 6425 5800 6425
+Connection ~ 5800 6425
+Wire Wire Line
+	4300 6625 4525 6625
+$Comp
+L Battery_Management:MCP73831-3-OT U5
+U 1 1 5EC2C51F
+P 4925 6525
+F 0 "U5" H 4925 7006 50  0000 C CNN
+F 1 "MCP73831-3-OT" H 4925 6915 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4975 6275 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 4775 6475 50  0001 C CNN
+	1    4925 6525
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
