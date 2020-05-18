@@ -637,14 +637,7 @@ $EndComp
 Wire Wire Line
 	4375 4475 4425 4475
 Wire Wire Line
-	3650 4475 3750 4475
-Wire Wire Line
 	3925 3900 3750 3900
-Wire Wire Line
-	3750 3900 3750 4475
-Connection ~ 3750 4475
-Wire Wire Line
-	3750 4475 3775 4475
 Wire Wire Line
 	4225 3900 4425 3900
 Wire Wire Line
@@ -746,4 +739,11 @@ Wire Wire Line
 	2250 5900 2250 6000
 Wire Wire Line
 	2250 5900 2775 5900
+Wire Wire Line
+	3750 4475 3775 4475
+Wire Wire Line
+	3650 4475 3750 4475
+Connection ~ 3750 4475
+Wire Wire Line
+	3750 3900 3750 4475
 $EndSCHEMATC
