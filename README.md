@@ -4,6 +4,7 @@ Project wiki: https://github.com/joric/nrfmicro/wiki
 
 ## Pictures
 
-![](hardware/front.png)
-![](hardware/back.png)
+front | back
+---|---
+![](hardware/plot/nrfmicro-Front.png)|![](hardware/plot/nrfmicro-Back.png)
 
