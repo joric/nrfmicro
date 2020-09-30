@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name nrfmicro)(type Legacy)(uri ${KIPRJMOD}/nrfmicro.lib)(options "")(descr ""))
-  (lib (name nrfmicro-rescue)(type Legacy)(uri ${KIPRJMOD}/nrfmicro-rescue.lib)(options "")(descr ""))
 )
