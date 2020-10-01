@@ -1,4 +1,4 @@
-19162487834334320
+19149784095545689
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -84308,13 +84308,6 @@ E73-2G4M08S1C-52840
 43
 43
 nrfmicro
-USB
-Through hole straight pin header, 1x04, 2.54mm pitch, single row
-Through hole pin header THT 1x04 2.54mm single row
-0
-4
-4
-nrfmicro
 USB-C-C168688
 
 
@@ -84343,61 +84336,12 @@ Through hole pin header THT 1x04 2.54mm single row
 4
 4
 nrfmicro
-jumper
-
-
-0
-2
-2
-nrfmicro
-jumper_closed
-
-
-0
-3
-2
-nrfmicro
-mechcult_hor
-
-
-0
-0
-0
-nrfmicro
-mechcult_vert
-
-
-0
-0
-0
-nrfmicro
 pro_micro
 
 
 0
 24
 24
-nrfmicro
-switch_MSK-12C02_smd
-
-
-0
-7
-3
-nrfmicro
-usb_micro
-USB Micro-B receptacle, http://www.mouser.com/ds/2/445/629105150521-469306.pdf
-usb micro receptacle
-0
-9
-6
-nrfmicro
-usb_type_c
-
-
-0
-20
-17
 ribbon_connectors
 SSD1306_ribbon
 

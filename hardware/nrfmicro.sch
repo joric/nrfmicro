@@ -472,17 +472,6 @@ F 3 "" H 2400 4300 50  0001 C CNN
 	1    2400 4300
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5F6E41AA
-P 1725 6500
-F 0 "C1" H 1633 6546 50  0000 R CNN
-F 1 "10uF" H 1633 6455 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1725 6500 50  0001 C CNN
-F 3 "~" H 1725 6500 50  0001 C CNN
-	1    1725 6500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1725 6150 1725 6300
 Text GLabel 1725 5650 1    60   Input ~ 0
@@ -711,17 +700,6 @@ Wire Wire Line
 Connection ~ 5750 4400
 Wire Wire Line
 	5750 4400 5825 4400
-$Comp
-L power:GND #PWR0118
-U 1 1 5F7268CC
-P 1725 6600
-F 0 "#PWR0118" H 1725 6350 50  0001 C CNN
-F 1 "GND" H 1725 6450 50  0000 C CNN
-F 2 "" H 1725 6600 50  0001 C CNN
-F 3 "" H 1725 6600 50  0001 C CNN
-	1    1725 6600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9575 2700 9875 2700
 Connection ~ 9875 2700
@@ -772,8 +750,6 @@ Wire Wire Line
 	6350 900  6625 900 
 Wire Wire Line
 	6350 1000 7150 1000
-Wire Wire Line
-	1725 6400 1725 6300
 Wire Wire Line
 	1625 6300 1725 6300
 Wire Wire Line
@@ -875,4 +851,19 @@ Wire Wire Line
 	8325 850  7975 850 
 Text GLabel 8325 750  0    60   Input ~ 0
 nRF_VDD
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5F764467
+P 1300 2150
+F 0 "Y1" V 1350 1800 50  0000 L CNN
+F 1 "32.768kHz" V 1250 1650 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm" H 1300 2150 50  0001 C CNN
+F 3 "~" H 1300 2150 50  0001 C CNN
+	1    1300 2150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1300 2050 1650 2050
+Wire Wire Line
+	1650 2250 1300 2250
 $EndSCHEMATC

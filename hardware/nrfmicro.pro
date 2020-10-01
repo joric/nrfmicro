@@ -1,4 +1,4 @@
-update=09/27/20 00:25:40
+update=10/02/20 00:04:45
 version=1
 last_client=kicad
 [cvpcb]
@@ -44,8 +44,8 @@ dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
 SilkLineWidth=0.08
-SilkTextSizeV=0.5
-SilkTextSizeH=0.5
+SilkTextSizeV=0.7
+SilkTextSizeH=0.7
 SilkTextSizeThickness=0.08
 SilkTextItalic=0
 SilkTextUpright=1
