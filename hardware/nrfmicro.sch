@@ -428,8 +428,6 @@ F 3 "~" H 9450 4125 50  0001 C CNN
 	1    9450 4125
 	1    0    0    -1  
 $EndComp
-Text GLabel 1325 2450 0    60   Input ~ 0
-PROG
 Wire Wire Line
 	4625 4425 4725 4425
 Connection ~ 4725 4425
@@ -469,17 +467,6 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 4300 50  0001 C CNN
 F 3 "" H 2400 4300 50  0001 C CNN
 	1    2400 4300
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5F6E41AA
-P 1725 6500
-F 0 "C1" H 1633 6546 50  0000 R CNN
-F 1 "10uF" H 1633 6455 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1725 6500 50  0001 C CNN
-F 3 "~" H 1725 6500 50  0001 C CNN
-	1    1725 6500
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1725 6150 1725 6300
@@ -709,17 +696,6 @@ Wire Wire Line
 Connection ~ 5750 4400
 Wire Wire Line
 	5750 4400 5825 4400
-$Comp
-L power:GND #PWR0118
-U 1 1 5F7268CC
-P 1725 6600
-F 0 "#PWR0118" H 1725 6350 50  0001 C CNN
-F 1 "GND" H 1725 6450 50  0000 C CNN
-F 2 "" H 1725 6600 50  0001 C CNN
-F 3 "" H 1725 6600 50  0001 C CNN
-	1    1725 6600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9575 2700 9875 2700
 Connection ~ 9875 2700
@@ -730,16 +706,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0108
 U 1 1 5F8195E6
-P 3525 3100
-F 0 "#PWR0108" H 3525 2850 50  0001 C CNN
-F 1 "GND" H 3530 2927 50  0000 C CNN
-F 2 "" H 3525 3100 50  0001 C CNN
-F 3 "" H 3525 3100 50  0001 C CNN
-	1    3525 3100
+P 3575 3100
+F 0 "#PWR0108" H 3575 2850 50  0001 C CNN
+F 1 "GND" H 3580 2927 50  0000 C CNN
+F 2 "" H 3575 3100 50  0001 C CNN
+F 3 "" H 3575 3100 50  0001 C CNN
+	1    3575 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3525 3100 3525 3050
+	3575 3100 3575 3050
 $Comp
 L power:GND #PWR0109
 U 1 1 5F81C075
@@ -769,8 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	6350 1000 7150 1000
 Wire Wire Line
-	1725 6400 1725 6300
-Wire Wire Line
 	1625 6300 1725 6300
 Wire Wire Line
 	1325 6400 1325 6300
@@ -794,8 +768,6 @@ Wire Wire Line
 	1325 2850 1650 2850
 Wire Wire Line
 	1325 2650 1650 2650
-Wire Wire Line
-	1325 2450 1650 2450
 Wire Wire Line
 	1325 1150 1650 1150
 Text Notes 5950 6350 0    60   ~ 0
@@ -871,8 +843,23 @@ Wire Wire Line
 	8325 850  7975 850 
 Text GLabel 8325 750  0    60   Input ~ 0
 nRF_VDD
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5F764467
+P 1300 2150
+F 0 "Y1" V 1350 1800 50  0000 L CNN
+F 1 "32.768kHz" V 1250 1650 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm" H 1300 2150 50  0001 C CNN
+F 3 "~" H 1300 2150 50  0001 C CNN
+	1    1300 2150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1300 2050 1650 2050
+Wire Wire Line
+	1650 2250 1300 2250
 Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
-	3000 3050 3525 3050
+	3000 3050 3575 3050
 $EndSCHEMATC
