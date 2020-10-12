@@ -1,4 +1,4 @@
-19085488119964766
+19087092057684611
 AI03 Keyswitches
 ALPS-1.5U
 
@@ -50687,6 +50687,13 @@ Switch_TSTPHWM_6.2x6.2
 4
 2
 Custom Parts
+Switch_Tactile_SPST_Angled_MJTP1117
+tactile switch SPST right angle, PTS645VL39-2 LFS
+tactile switch SPST angled PTS645VL39-2 LFS C&K Button
+0
+4
+2
+Custom Parts
 TP4056-18650
 
 
@@ -50715,28 +50722,28 @@ TRRS_MidMount_SJ2-35355A-SMT-TR
 6
 4
 Custom Parts
-USB_C-C168688
+USB-C_C168688
 
 
 0
-16
-11
+30
+9
 Custom Parts
-USB_C_MidMount_Receptacle_Power_Only
+USB-C_MidMount_Receptacle_Power_Only
 
 
 0
 10
 7
 Custom Parts
-USB_C_Receptacle_Power_Only
+USB-C_Receptacle_Power_Only
 USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf
 usb usb-c 2.0 pd
 0
 10
 7
 Custom Parts
-USB_C_USB_312
+USB-C_USB_312
 http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf
 USB C Type-C Receptacle USB2.0
 0
@@ -84042,11 +84049,11 @@ E73-2G4M08S1C-52840
 43
 43
 nrfmicro
-USB-C-C168688
+USB-C_C168688
 
 
 0
-16
+30
 11
 nrfmicro
 connector_bat

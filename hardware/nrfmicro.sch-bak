@@ -182,8 +182,6 @@ F 3 "~" H 8525 850 50  0001 C CNN
 $EndComp
 Text GLabel 3000 2950 2    60   Input ~ 0
 DCCH
-Text GLabel 3000 3150 2    60   Input ~ 0
-VDDH
 Text Label 1650 2750 2    60   ~ 0
 P0.04
 Text GLabel 10475 1800 2    60   Input ~ 0
@@ -241,7 +239,7 @@ U 1 1 5C743564
 P 9875 1800
 F 0 "J1" H 9875 2625 50  0000 C CNN
 F 1 "USB-C Conn" H 9875 2550 50  0000 C CNN
-F 2 "nrfmicro:USB-C-C168688" H 9982 2575 50  0001 C CNN
+F 2 "nrfmicro:USB-C_C168688" H 9982 2575 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1800 50  0001 C CNN
 	1    9875 1800
 	1    0    0    -1  
@@ -710,18 +708,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0108
 U 1 1 5F8195E6
-P 3375 3100
-F 0 "#PWR0108" H 3375 2850 50  0001 C CNN
-F 1 "GND" H 3380 2927 50  0000 C CNN
-F 2 "" H 3375 3100 50  0001 C CNN
-F 3 "" H 3375 3100 50  0001 C CNN
-	1    3375 3100
+P 3525 3100
+F 0 "#PWR0108" H 3525 2850 50  0001 C CNN
+F 1 "GND" H 3530 2927 50  0000 C CNN
+F 2 "" H 3525 3100 50  0001 C CNN
+F 3 "" H 3525 3100 50  0001 C CNN
+	1    3525 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3375 3100 3375 3050
-Wire Wire Line
-	3000 3050 3375 3050
+	3525 3100 3525 3050
 $Comp
 L power:GND #PWR0109
 U 1 1 5F81C075
@@ -866,4 +862,8 @@ Wire Wire Line
 	1300 2050 1650 2050
 Wire Wire Line
 	1650 2250 1300 2250
+Text GLabel 3000 3150 2    60   Input ~ 0
+nRF_VDD
+Wire Wire Line
+	3000 3050 3525 3050
 $EndSCHEMATC

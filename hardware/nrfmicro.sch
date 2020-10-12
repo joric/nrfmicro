@@ -239,7 +239,7 @@ U 1 1 5C743564
 P 9875 1800
 F 0 "J1" H 9875 2625 50  0000 C CNN
 F 1 "USB-C Conn" H 9875 2550 50  0000 C CNN
-F 2 "nrfmicro:USB-C-C168688" H 9982 2575 50  0001 C CNN
+F 2 "nrfmicro:USB-C_C168688" H 9982 2575 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1800 50  0001 C CNN
 	1    9875 1800
 	1    0    0    -1  
@@ -848,10 +848,10 @@ Wire Wire Line
 Text GLabel 8325 750  0    60   Input ~ 0
 nRF_VDD
 $Comp
-L Device:Crystal_Small Y1
+L Device:Crystal_Small X1
 U 1 1 5F764467
 P 1300 2150
-F 0 "Y1" V 1350 1800 50  0000 L CNN
+F 0 "X1" V 1350 1800 50  0000 L CNN
 F 1 "32.768kHz" V 1250 1650 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm" H 1300 2150 50  0001 C CNN
 F 3 "~" H 1300 2150 50  0001 C CNN
