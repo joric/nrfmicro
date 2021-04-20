@@ -137,7 +137,7 @@ Text Label 1650 2050 2    60   ~ 0
 P0.00
 Text Label 1650 2250 2    60   ~ 0
 P0.01
-Text GLabel 10475 1700 2    60   Input ~ 0
+Text GLabel 10600 1450 2    60   Input ~ 0
 DATA-
 $Comp
 L Device:R R2
@@ -184,11 +184,11 @@ Text GLabel 3000 2950 2    60   Input ~ 0
 DCCH
 Text Label 1650 2750 2    60   ~ 0
 P0.04
-Text GLabel 10475 1800 2    60   Input ~ 0
+Text GLabel 10600 1550 2    60   Input ~ 0
 DATA-
-Text GLabel 10475 1900 2    60   Input ~ 0
+Text GLabel 10600 1650 2    60   Input ~ 0
 DATA+
-Text GLabel 10475 2000 2    60   Input ~ 0
+Text GLabel 10600 1750 2    60   Input ~ 0
 DATA+
 Text GLabel 8675 3250 1    60   Input ~ 0
 CC1
@@ -219,29 +219,29 @@ $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5E5EC00A
-P 9875 2700
-F 0 "#PWR0111" H 9875 2450 50  0001 C CNN
-F 1 "GND" H 9875 2550 50  0000 C CNN
-F 2 "" H 9875 2700 50  0001 C CNN
-F 3 "" H 9875 2700 50  0001 C CNN
-	1    9875 2700
+P 10000 2450
+F 0 "#PWR0111" H 10000 2200 50  0001 C CNN
+F 1 "GND" H 10000 2300 50  0000 C CNN
+F 2 "" H 10000 2450 50  0001 C CNN
+F 3 "" H 10000 2450 50  0001 C CNN
+	1    10000 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 10475 1400 2    60   Input ~ 0
+Text GLabel 10600 1150 2    60   Input ~ 0
 CC1
-Text GLabel 10475 1500 2    60   Input ~ 0
+Text GLabel 10600 1250 2    60   Input ~ 0
 CC2
-Text GLabel 10475 1200 2    60   Input ~ 0
+Text GLabel 10600 950  2    60   Input ~ 0
 VBUS
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J1
 U 1 1 5C743564
-P 9875 1800
-F 0 "J1" H 9875 2625 50  0000 C CNN
-F 1 "USB-C Conn" H 9875 2550 50  0000 C CNN
-F 2 "nrfmicro:USB-C_C168688" H 9982 2575 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1800 50  0001 C CNN
-	1    9875 1800
+P 10000 1550
+F 0 "J1" H 10000 2375 50  0000 C CNN
+F 1 "USB-C Conn" H 10000 2300 50  0000 C CNN
+F 2 "nrfmicro:USB-C_C168688" H 10107 2325 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 1550 50  0001 C CNN
+	1    10000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -284,7 +284,7 @@ Power and Filtering
 Wire Wire Line
 	2650 6300 2700 6300
 $Comp
-L Regulator_Linear:AP2112K-3.3 U2
+L nrfmicro-rescue:AP2112K-3.3-Regulator_Linear U2
 U 1 1 5EBF7400
 P 2350 6400
 F 0 "U2" H 2350 6742 50  0000 C CNN
@@ -402,30 +402,30 @@ F 3 "" H 8400 4125 50  0001 C CNN
 $EndComp
 Text GLabel 8925 4125 3    60   Input ~ 0
 nRF_VDD
-Text GLabel 9900 4125 3    60   Input ~ 0
+Text GLabel 8900 5025 3    60   Input ~ 0
 VBUS
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5ED2274A
-P 9900 4125
-F 0 "#FLG0103" H 9900 4200 50  0001 C CNN
-F 1 "PWR_FLAG" H 9900 4298 50  0000 C CNN
-F 2 "" H 9900 4125 50  0001 C CNN
-F 3 "~" H 9900 4125 50  0001 C CNN
-	1    9900 4125
+P 8900 5025
+F 0 "#FLG0103" H 8900 5100 50  0001 C CNN
+F 1 "PWR_FLAG" H 8900 5198 50  0000 C CNN
+F 2 "" H 8900 5025 50  0001 C CNN
+F 3 "~" H 8900 5025 50  0001 C CNN
+	1    8900 5025
 	1    0    0    -1  
 $EndComp
-Text GLabel 9450 4125 3    60   Input ~ 0
+Text GLabel 8450 5025 3    60   Input ~ 0
 VBAT
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5ED2570F
-P 9450 4125
-F 0 "#FLG0104" H 9450 4200 50  0001 C CNN
-F 1 "PWR_FLAG" H 9450 4298 50  0000 C CNN
-F 2 "" H 9450 4125 50  0001 C CNN
-F 3 "~" H 9450 4125 50  0001 C CNN
-	1    9450 4125
+P 8450 5025
+F 0 "#FLG0104" H 8450 5100 50  0001 C CNN
+F 1 "PWR_FLAG" H 8450 5198 50  0000 C CNN
+F 2 "" H 8450 5025 50  0001 C CNN
+F 3 "~" H 8450 5025 50  0001 C CNN
+	1    8450 5025
 	1    0    0    -1  
 $EndComp
 Text GLabel 1325 2450 0    60   Input ~ 0
@@ -699,8 +699,8 @@ Connection ~ 5750 4400
 Wire Wire Line
 	5750 4400 5825 4400
 Wire Wire Line
-	9575 2700 9875 2700
-Connection ~ 9875 2700
+	9700 2450 10000 2450
+Connection ~ 10000 2450
 Wire Wire Line
 	4375 6175 4425 6175
 Wire Wire Line
@@ -762,8 +762,8 @@ Wire Wire Line
 	1325 5950 1425 5950
 Wire Wire Line
 	1725 5650 1725 5750
-NoConn ~ 10475 2300
-NoConn ~ 10475 2400
+NoConn ~ 10600 2050
+NoConn ~ 10600 2150
 Wire Wire Line
 	1325 2750 1650 2750
 Wire Wire Line
@@ -866,4 +866,45 @@ Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
 	3000 3050 3525 3050
+Text GLabel 10600 3625 2    60   Input ~ 0
+DATA-
+Text GLabel 10600 3725 2    60   Input ~ 0
+DATA-
+Text GLabel 10600 3825 2    60   Input ~ 0
+DATA+
+Text GLabel 10600 3925 2    60   Input ~ 0
+DATA+
+$Comp
+L power:GND #PWR0118
+U 1 1 607FEA59
+P 10000 4625
+F 0 "#PWR0118" H 10000 4375 50  0001 C CNN
+F 1 "GND" H 10000 4475 50  0000 C CNN
+F 2 "" H 10000 4625 50  0001 C CNN
+F 3 "" H 10000 4625 50  0001 C CNN
+	1    10000 4625
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 3325 2    60   Input ~ 0
+CC1
+Text GLabel 10600 3425 2    60   Input ~ 0
+CC2
+Text GLabel 10600 3125 2    60   Input ~ 0
+VBUS
+$Comp
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J5
+U 1 1 607FEA62
+P 10000 3725
+F 0 "J5" H 10000 4550 50  0000 C CNN
+F 1 "USB-C Conn" H 10000 4475 50  0000 C CNN
+F 2 "nrfmicro:USB-C-PCB" H 10107 4500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 3725 50  0001 C CNN
+	1    10000 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4625 10000 4625
+Connection ~ 10000 4625
+NoConn ~ 10600 4225
+NoConn ~ 10600 4325
 $EndSCHEMATC
