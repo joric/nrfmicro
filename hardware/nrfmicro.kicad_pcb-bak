@@ -226,7 +226,7 @@
   )
 
   (module nrfmicro:jumper (layer B.Cu) (tedit 5CB8E74F) (tstamp 6082B95E)
-    (at 24.887433 48.511275 270)
+    (at 24.874733 48.511275 270)
     (path /6082D6BA)
     (attr smd)
     (fp_text reference JP1 (at 0 1.524 90) (layer B.SilkS) hide
