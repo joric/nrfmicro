@@ -472,7 +472,7 @@ F 3 "" H 2400 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1725 6150 1725 6300
-Text GLabel 2125 5550 2    60   Input ~ 0
+Text GLabel 10125 5525 2    60   Input ~ 0
 VBAT
 $Comp
 L power:GND #PWR0102
@@ -760,8 +760,6 @@ Wire Wire Line
 	1225 5950 1325 5950
 Wire Wire Line
 	1325 5950 1425 5950
-Wire Wire Line
-	1725 5650 1725 5750
 NoConn ~ 10600 2050
 NoConn ~ 10600 2150
 Wire Wire Line
@@ -910,12 +908,33 @@ NoConn ~ 10600 4325
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60825A94
-P 1925 5550
-F 0 "SW1" H 1925 5835 50  0000 C CNN
-F 1 "SW_SPDT" H 1925 5744 50  0000 C CNN
-F 2 "" H 1925 5550 50  0001 C CNN
-F 3 "~" H 1925 5550 50  0001 C CNN
-	1    1925 5550
+P 9925 5525
+F 0 "SW1" H 9925 5810 50  0000 C CNN
+F 1 "SW_SPDT" H 9925 5719 50  0000 C CNN
+F 2 "nrfmicro:switch_MSK-12C02_smd" H 9925 5525 50  0001 C CNN
+F 3 "~" H 9925 5525 50  0001 C CNN
+	1    9925 5525
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 6082D6BA
+P 10025 5900
+F 0 "JP1" H 10025 5675 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 10025 5766 50  0000 C CNN
+F 2 "" H 10025 5900 50  0001 C CNN
+F 3 "~" H 10025 5900 50  0001 C CNN
+	1    10025 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1725 5575 1725 5750
+Text GLabel 10175 5900 2    60   Input ~ 0
+VBAT
+Text GLabel 1725 5575 1    60   Input ~ 0
+VBAT_SW
+Text GLabel 9875 5900 0    60   Input ~ 0
+VBAT_SW
+Text GLabel 9725 5625 0    60   Input ~ 0
+VBAT_SW
 $EndSCHEMATC
