@@ -472,7 +472,7 @@ F 3 "" H 2400 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1725 6150 1725 6300
-Text GLabel 1725 5650 1    60   Input ~ 0
+Text GLabel 2125 5650 2    60   Input ~ 0
 VBAT
 $Comp
 L power:GND #PWR0102
@@ -760,8 +760,6 @@ Wire Wire Line
 	1225 5950 1325 5950
 Wire Wire Line
 	1325 5950 1425 5950
-Wire Wire Line
-	1725 5650 1725 5750
 NoConn ~ 10600 2050
 NoConn ~ 10600 2150
 Wire Wire Line
@@ -907,4 +905,15 @@ Wire Wire Line
 Connection ~ 10000 4625
 NoConn ~ 10600 4225
 NoConn ~ 10600 4325
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 60825A94
+P 1925 5650
+F 0 "SW1" H 1925 5935 50  0000 C CNN
+F 1 "SW_SPDT" H 1925 5844 50  0000 C CNN
+F 2 "nrfmicro:switch_MSK-12C02_smd" H 1925 5650 50  0001 C CNN
+F 3 "~" H 1925 5650 50  0001 C CNN
+	1    1925 5650
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

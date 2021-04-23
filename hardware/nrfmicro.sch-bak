@@ -472,7 +472,7 @@ F 3 "" H 2400 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1725 6150 1725 6300
-Text GLabel 1725 5650 1    60   Input ~ 0
+Text GLabel 2125 5550 2    60   Input ~ 0
 VBAT
 $Comp
 L power:GND #PWR0102
@@ -875,10 +875,10 @@ DATA+
 Text GLabel 10600 3925 2    60   Input ~ 0
 DATA+
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0118
 U 1 1 607FEA59
 P 10000 4625
-F 0 "#PWR?" H 10000 4375 50  0001 C CNN
+F 0 "#PWR0118" H 10000 4375 50  0001 C CNN
 F 1 "GND" H 10000 4475 50  0000 C CNN
 F 2 "" H 10000 4625 50  0001 C CNN
 F 3 "" H 10000 4625 50  0001 C CNN
@@ -892,10 +892,10 @@ CC2
 Text GLabel 10600 3125 2    60   Input ~ 0
 VBUS
 $Comp
-L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J?
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J5
 U 1 1 607FEA62
 P 10000 3725
-F 0 "J?" H 10000 4550 50  0000 C CNN
+F 0 "J5" H 10000 4550 50  0000 C CNN
 F 1 "USB-C Conn" H 10000 4475 50  0000 C CNN
 F 2 "nrfmicro:USB-C-PCB" H 10107 4500 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 3725 50  0001 C CNN
@@ -908,31 +908,14 @@ Connection ~ 10000 4625
 NoConn ~ 10600 4225
 NoConn ~ 10600 4325
 $Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 608014EF
-P 10250 5350
-F 0 "J?" H 10330 5342 50  0000 L CNN
-F 1 "Ex_USB" H 10330 5251 50  0000 L CNN
-F 2 "nrfmicro:usb-ph-header" H 10250 5350 50  0001 C CNN
-F 3 "~" H 10250 5350 50  0001 C CNN
-	1    10250 5350
-	1    0    0    1   
+L Switch:SW_SPDT SW1
+U 1 1 60825A94
+P 1925 5550
+F 0 "SW1" H 1925 5835 50  0000 C CNN
+F 1 "SW_SPDT" H 1925 5744 50  0000 C CNN
+F 2 "" H 1925 5550 50  0001 C CNN
+F 3 "~" H 1925 5550 50  0001 C CNN
+	1    1925 5550
+	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 608014F5
-P 10050 5450
-F 0 "#PWR?" H 10050 5200 50  0001 C CNN
-F 1 "GND" H 10050 5300 50  0000 C CNN
-F 2 "" H 10050 5450 50  0001 C CNN
-F 3 "" H 10050 5450 50  0001 C CNN
-	1    10050 5450
-	1    0    0    -1  
-$EndComp
-Text GLabel 10050 5150 0    60   Input ~ 0
-VBUS
-Text GLabel 10050 5350 0    60   Input ~ 0
-DATA+
-Text GLabel 10050 5250 0    60   Input ~ 0
-DATA-
 $EndSCHEMATC
