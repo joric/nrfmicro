@@ -7,7 +7,7 @@ Project wiki: https://github.com/joric/nrfmicro/wiki
 
 This is the experimental branch. Latest gerbers are here:
 
-* https://github.com/joric/nrfmicro/plot/nrfmicro-latest-gerbers.zip
+* [nrfmicro-latest-gerbers.zip](hardware/plot/nrfmicro-latest-gerbers.zip?raw=true)
 
 ## Pictures
 
