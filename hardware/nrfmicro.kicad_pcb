@@ -2600,4 +2600,9 @@
       )
     )
   )
+
+  (gr_text "nRFMicro 1.4" (at 27.74286 50.4) (layer B.SilkS) (tstamp 5EC0A02E)
+    (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
+  )
+
 )
