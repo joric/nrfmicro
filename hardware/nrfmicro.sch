@@ -472,7 +472,7 @@ F 3 "" H 2400 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1725 6150 1725 6300
-Text GLabel 10125 5525 2    60   Input ~ 0
+Text GLabel 9725 5625 0    60   Input ~ 0
 VBAT
 $Comp
 L power:GND #PWR0102
@@ -894,6 +894,6 @@ Text GLabel 1725 5575 1    60   Input ~ 0
 VBAT_SW
 Text GLabel 9875 5900 0    60   Input ~ 0
 VBAT_SW
-Text GLabel 9725 5625 0    60   Input ~ 0
+Text GLabel 10125 5525 2    60   Input ~ 0
 VBAT_SW
 $EndSCHEMATC
