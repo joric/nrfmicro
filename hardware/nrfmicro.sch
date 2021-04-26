@@ -239,7 +239,7 @@ U 1 1 5C743564
 P 10000 1550
 F 0 "J1" H 10000 2375 50  0000 C CNN
 F 1 "USB-C Conn" H 10000 2300 50  0000 C CNN
-F 2 "nrfmicro:USB-C_C168688" H 10107 2325 50  0001 C CNN
+F 2 "nrfmicro:USB-C-SMD_TYPE-C-USB-4" H 10107 2325 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 1550 50  0001 C CNN
 	1    10000 1550
 	1    0    0    -1  
@@ -864,47 +864,6 @@ Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
 	3000 3050 3525 3050
-Text GLabel 10600 3625 2    60   Input ~ 0
-DATA-
-Text GLabel 10600 3725 2    60   Input ~ 0
-DATA-
-Text GLabel 10600 3825 2    60   Input ~ 0
-DATA+
-Text GLabel 10600 3925 2    60   Input ~ 0
-DATA+
-$Comp
-L power:GND #PWR0118
-U 1 1 607FEA59
-P 10000 4625
-F 0 "#PWR0118" H 10000 4375 50  0001 C CNN
-F 1 "GND" H 10000 4475 50  0000 C CNN
-F 2 "" H 10000 4625 50  0001 C CNN
-F 3 "" H 10000 4625 50  0001 C CNN
-	1    10000 4625
-	1    0    0    -1  
-$EndComp
-Text GLabel 10600 3325 2    60   Input ~ 0
-CC1
-Text GLabel 10600 3425 2    60   Input ~ 0
-CC2
-Text GLabel 10600 3125 2    60   Input ~ 0
-VBUS
-$Comp
-L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J5
-U 1 1 607FEA62
-P 10000 3725
-F 0 "J5" H 10000 4550 50  0000 C CNN
-F 1 "USB-C Conn" H 10000 4475 50  0000 C CNN
-F 2 "nrfmicro:USB-C-PCB" H 10107 4500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 3725 50  0001 C CNN
-	1    10000 3725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 4625 10000 4625
-Connection ~ 10000 4625
-NoConn ~ 10600 4225
-NoConn ~ 10600 4325
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 60825A94
