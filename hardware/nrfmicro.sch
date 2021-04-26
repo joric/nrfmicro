@@ -239,7 +239,7 @@ U 1 1 5C743564
 P 10000 1550
 F 0 "J1" H 10000 2375 50  0000 C CNN
 F 1 "USB-C Conn" H 10000 2300 50  0000 C CNN
-F 2 "nrfmicro:HRO-TYPE-C-31-M-12" H 10107 2325 50  0001 C CNN
+F 2 "nrfmicro:usb_type_c" H 10107 2325 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10150 1550 50  0001 C CNN
 	1    10000 1550
 	1    0    0    -1  
