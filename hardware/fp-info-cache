@@ -1,4 +1,4 @@
-3854754229768222
+3851700802179723
 Button_Switch_SMD
 Nidec_Copal_SH-7010A
 4-bit rotary coded switch, J-hook, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
@@ -16723,13 +16723,6 @@ Through hole pin header THT 1x04 2.54mm single row
 4
 4
 nrfmicro
-jumper
-
-
-0
-2
-2
-nrfmicro
 pcb_antenna_shape
 http://www.ti.com/lit/an/swra117d/swra117d.pdf
 PCB antenna
@@ -16750,13 +16743,6 @@ signature
 0
 0
 0
-nrfmicro
-switch_MSK-12C02_smd
-
-
-0
-7
-3
 nrfmicro
 usb-ph-header
 Through hole straight pin header, 1x04, 2.54mm pitch, single row
