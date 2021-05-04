@@ -2088,7 +2088,7 @@
       (net 42 nRF_VDD))
   )
 
-  (module nrfmicro:switch_MSK-12C02_smd (layer B.Cu) (tedit 608CE105) (tstamp 60823D3C)
+  (module nrfmicro:switch_MSK-12C02_smd (layer B.Cu) (tedit 608CE113) (tstamp 60823D3C)
     (at 27.719533 51.711675 90)
     (path /60825A94)
     (attr smd)
@@ -2117,7 +2117,7 @@
       (net 10 VBAT))
     (pad 3 thru_hole rect (at 3.2 -2.2 270) (size 1 0.6) (drill 0.3) (layers *.Cu *.Mask B.Paste)
       (net 56 VBAT_SW))
-    (pad 1 thru_hole rect (at 3.2 2.2 270) (size 1 0.6) (drill 0.3) (layers *.Cu *.Mask F.Paste)
+    (pad 1 thru_hole rect (at 3.2 2.2 270) (size 1 0.6) (drill 0.3) (layers *.Cu *.Mask B.Paste)
       (net 55 "Net-(SW1-Pad1)"))
     (pad "" thru_hole rect (at 0.207 3.6) (size 1 0.6) (drill 0.3) (layers *.Cu *.Mask B.Paste))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPDT_PCM12.wrl
