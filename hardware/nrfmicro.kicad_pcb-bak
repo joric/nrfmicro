@@ -1511,7 +1511,7 @@
   )
 
   (via (at 31.262833 27.378475) (size 0.6) (drill 0.33) (layers F.Cu B.Cu) (net 0))
-  (via (at 24.100033 27.378475) (size 0.6) (drill 0.33) (layers F.Cu B.Cu) (net 0))
+  (via (at 24.150833 27.391175) (size 0.6) (drill 0.33) (layers F.Cu B.Cu) (net 0))
   (via (at 23.122133 27.378475) (size 0.6) (drill 0.33) (layers F.Cu B.Cu) (net 9))
   (segment (start 30.472344 20.588984) (end 30.472344 23.088679) (width 0.2) (layer F.Cu) (net 1))
   (segment (start 24.972344 20.588988) (end 24.972344 22.982856) (width 0.2) (layer F.Cu) (net 1))
