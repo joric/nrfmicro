@@ -221,7 +221,7 @@
     (uvia_drill 0.1)
   )
 
-  (module nrfmicro:switch_MSK-12C02_smd (layer B.Cu) (tedit 6097CA3D) (tstamp 60823D3C)
+  (module nrfmicro:switch_MSK-12C02_smd (layer B.Cu) (tedit 6097CAEB) (tstamp 60823D3C)
     (at 27.72 16.82 270)
     (path /60825A94)
     (attr smd)
@@ -241,7 +241,7 @@
     (fp_line (start 0.3 -1.5) (end 0.3 1.5) (layer Dwgs.User) (width 0.15))
     (fp_line (start 0.3 -1.5) (end 0 -1.5) (layer Dwgs.User) (width 0.15))
     (fp_line (start 0.3 1.5) (end 0 1.5) (layer Dwgs.User) (width 0.15))
-    (pad "" thru_hole rect (at 1.35 -3.6 180) (size 1 2.66) (drill 0.3) (layers *.Cu *.Mask B.Paste))
+    (pad "" thru_hole rect (at 1.3639 -3.6195 180) (size 1.2 2.6) (drill 0.3) (layers *.Cu *.Mask B.Paste))
     (pad "" np_thru_hole circle (at 1.35 1.45 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 1.35 -1.45 90) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
     (pad 2 smd rect (at 3.2 -0.7 90) (size 1 0.6) (layers B.Cu B.Paste B.Mask)
@@ -250,7 +250,7 @@
       (net 10 VBAT))
     (pad 1 smd rect (at 3.2 2.2 90) (size 1 0.6) (layers B.Cu B.Paste B.Mask)
       (net 51 "Net-(SW1-Pad1)"))
-    (pad "" thru_hole rect (at 1.35 3.6 180) (size 1 2.66) (drill 0.3) (layers *.Cu *.Mask B.Paste))
+    (pad "" thru_hole rect (at 1.3639 3.6195 180) (size 1.2 2.6) (drill 0.3) (layers *.Cu *.Mask B.Paste))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPDT_PCM12.wrl
       (offset (xyz 1.7 0 0))
       (scale (xyz 1 1 1))
