@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name nrfmicro)(type KiCad)(uri ${KIPRJMOD}/nrfmicro.pretty)(options "")(descr ""))
+  (lib (name kicad-keyboard-libs)(type KiCad)(uri ${KIPRJMOD}/kicad-keyboard-libs/kicad-keyboard-libs.pretty)(options "")(descr ""))
 )

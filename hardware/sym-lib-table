@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name nrfmicro)(type Legacy)(uri ${KIPRJMOD}/nrfmicro.lib)(options "")(descr ""))
+  (lib (name nrfmicro-cache)(type Legacy)(uri ${KIPRJMOD}/nrfmicro-cache.lib)(options "")(descr ""))
+  (lib (name kicad-keyboard-libs)(type Legacy)(uri /Users/ian/Code/kicad-keyboard-libs/kicad-keyboard-libs.lib)(options "")(descr ""))
   (lib (name nrfmicro-rescue)(type Legacy)(uri ${KIPRJMOD}/nrfmicro-rescue.lib)(options "")(descr ""))
 )
