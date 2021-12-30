@@ -234,7 +234,7 @@ CC2
 Text GLabel 10475 1200 2    60   Input ~ 0
 VBUS
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
+L nrfmicro-rescue:USB_C_Receptacle_USB2.0-Connector J1
 U 1 1 5C743564
 P 9875 1800
 F 0 "J1" H 9875 2625 50  0000 C CNN
@@ -284,7 +284,7 @@ Power and Filtering
 Wire Wire Line
 	2650 6300 2700 6300
 $Comp
-L Regulator_Linear:AP2112K-3.3 U2
+L nrfmicro-rescue:AP2112K-3.3-Regulator_Linear U2
 U 1 1 5EBF7400
 P 2350 6400
 F 0 "U2" H 2350 6742 50  0000 C CNN
@@ -866,4 +866,25 @@ Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
 	3000 3050 3525 3050
+$Comp
+L Jumper:Jumper_2_Open J5
+U 1 1 61CDE3EC
+P 4200 1000
+F 0 "J5" H 4200 1235 50  0000 C CNN
+F 1 "840/833 jumper" H 4200 1144 50  0000 C CNN
+F 2 "nrfmicro:Jumper_SMD" H 4200 1000 50  0001 C CNN
+F 3 "~" H 4200 1000 50  0001 C CNN
+	1    4200 1000
+	1    0    0    -1  
+$EndComp
+Text Label 4550 1000 0    60   ~ 0
+P1.11
+Text Label 3850 1000 2    60   ~ 0
+P1.04
+Wire Wire Line
+	3850 1000 4000 1000
+Wire Wire Line
+	4400 1000 4550 1000
+Text Notes 3600 1400 0    60   ~ 0
+Shorts P1.04 and P1.11\nfor using with\nE73-2G4M08S1E
 $EndSCHEMATC
