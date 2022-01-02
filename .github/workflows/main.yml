@@ -14,35 +14,31 @@ jobs:
           pcb_file: hardware/nrfmicro.kicad_pcb
           gerbers_dir: gerbers
 
-#      - name: Persist output
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: nrfmicro-gerbers
-#          path: gerbers
-
       - name: Gets latest created release info
         id: latest_release_info
         uses: jossef/action-latest-release-info@v1.1.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
-      - name: Upload release binary
+      - name: Upload front
         uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: ./gerbers/nrfmicro-devel-front.png
+          asset_path: ./gerbers/front.png
+          asset_name: nrfmicro-latest-front.png
 
-      - name: Upload release binary2
+      - name: Upload back
         uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: ./gerbers/nrfmicro-devel-back.png
+          asset_path: ./gerbers/back.png
+          asset_name: nrfmicro-latest-back.png
 
       - name: Upload gerbers
         uses: shogo82148/actions-upload-release-asset@v1
@@ -52,4 +48,4 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/gerbers.zip
-          asset_name: nrfmicro-devel-gerbers.zip
+          asset_name: nrfmicro-latest-gerbers.zip
