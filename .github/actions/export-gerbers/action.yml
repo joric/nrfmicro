@@ -23,5 +23,4 @@ runs:
       mkdir -p $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       kikit fab ${{ inputs.fab }} ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       kikit present boardpage gerbers --description $GITHUB_WORKSPACE/README.md --board "" "" $GITHUB_WORKSPACE/${{ inputs.pcb_file }} --name myname
-      pcbdraw --style builtin:set-white-enig.json $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/large-front.png
-      pcbdraw -b --style builtin:set-white-enig.json $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/large-back.png
+      pcbdraw --dpi 300 --filter "" --style builtin:set-white-enig.json $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/large-front.png
