@@ -27,22 +27,20 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
       - name: Upload release binary
-        uses: actions/upload-release-asset@v1.0.2
+        uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
+          overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/nrfmicro-front.png
-          asset_name: nrfmicro-front.png
-          asset_content_type: image/png
 
       - name: Upload release binary2
-        uses: actions/upload-release-asset@v1.0.2
+        uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
+          overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/nrfmicro-back.png
-          asset_name: nrfmicro-back.png
-          asset_content_type: image/png
 
