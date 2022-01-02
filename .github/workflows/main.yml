@@ -14,11 +14,11 @@ jobs:
           pcb_file: hardware/nrfmicro.kicad_pcb
           gerbers_dir: gerbers
 
-      - name: Persist output
-        uses: actions/upload-artifact@v2
-        with:
-          name: nrfmicro-gerbers
-          path: gerbers
+#      - name: Persist output
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: nrfmicro-gerbers
+#          path: gerbers
 
       - name: Gets latest created release info
         id: latest_release_info
