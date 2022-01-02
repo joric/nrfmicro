@@ -26,15 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
-      - name: Upload release binary2
-        uses: shogo82148/actions-upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          overwrite: true
-          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: ./gerbers/nrfmicro-back.png
-
       - name: Upload release binary
         uses: shogo82148/actions-upload-release-asset@v1
         env:
@@ -44,6 +35,15 @@ jobs:
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/nrfmicro-front.png
 
+      - name: Upload release binary2
+        uses: shogo82148/actions-upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          overwrite: true
+          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
+          asset_path: ./gerbers/nrfmicro-back.png
+
       - name: Upload gerbers
         uses: shogo82148/actions-upload-release-asset@v1
         env:
@@ -52,5 +52,4 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/gerbers.zip
-
-
+          asset_name: nrfmicro-latest-gerbers.zip
