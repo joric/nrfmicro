@@ -20,8 +20,8 @@ jobs:
           name: nrfmicro-gerbers
           path: gerbers
 
-      - name: Get release
-        id: get_release
+      - name: Gets latest created release info
+        id: latest_release_info
         uses: jossef/action-latest-release-info@v1.1.0
 
       - name: Upload release binary
