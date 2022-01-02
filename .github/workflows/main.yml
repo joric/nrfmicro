@@ -12,9 +12,9 @@ jobs:
         uses: ./.github/actions/export-gerbers
         with:
           pcb_file: hardware/nrfmicro.kicad_pcb
-          gerbers_dir: gerbers/gerber
+          gerbers_dir: gerbers
       - name: Persist output
         uses: actions/upload-artifact@v2
         with:
           name: nrfmicro-gerbers
-          path: gerbers
+          path: gerbers/gerber
