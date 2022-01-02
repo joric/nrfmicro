@@ -4189,7 +4189,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a3f5b412-9dc1-4040-94f6-28db5450529b)
     )
-    (fp_text value "SolderJumper_2_Open" (at 0 1.87) (layer "B.Fab")
+    (fp_text value "SolderJumper_2_Open" (at 1.778 -0.281) (layer "B.Fab")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 2aaa6498-6688-485d-bcff-26b6b1b25368)
     )
@@ -4203,10 +4203,10 @@
       (primitives
         (gr_poly (pts
             (xy 0.6 0.2)
-            (xy 0 -0.4)
-            (xy -0.6 0.2)
-            (xy -0.6 0.4)
             (xy 0.6 0.4)
+            (xy -0.6 0.4)
+            (xy -0.6 0.2)
+            (xy 0 -0.4)
           ) (width 0) (fill yes))
       ) (tstamp 2f24e43c-7e38-427a-93a2-cfee7c83ec54))
     (pad "2" smd custom locked (at 0 -0.8) (size 0.1 0.1) (layers "B.Cu" "B.Mask")
@@ -4214,11 +4214,11 @@
       (options (clearance outline) (anchor rect))
       (primitives
         (gr_poly (pts
-            (xy 0.6 -0.1)
-            (xy -0.6 -0.1)
-            (xy -0.6 0.9)
-            (xy 0 0.3)
             (xy 0.6 0.9)
+            (xy 0 0.3)
+            (xy -0.6 0.9)
+            (xy -0.6 -0.1)
+            (xy 0.6 -0.1)
           ) (width 0) (fill yes))
       ) (tstamp 1898a234-74a4-4663-932e-31d9c42cb45a))
   )
