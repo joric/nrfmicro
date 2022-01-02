@@ -4150,7 +4150,7 @@
   (gr_line (start 36.736533 51.876775) (end 18.702533 51.876775) (layer "Margin") (width 0.15) (tstamp 00000000-0000-0000-0000-00005ec0a3a6))
   (gr_line (start 18.702533 18.602775) (end 36.736533 18.602775) (layer "Margin") (width 0.15) (tstamp 00000000-0000-0000-0000-00005ec0a3a9))
   (gr_line (start 18.702533 51.876775) (end 18.702533 18.602775) (layer "Margin") (width 0.15) (tstamp 00000000-0000-0000-0000-00005ec0a3b5))
-  (gr_text "nRFMicro 1.4" (at 27.74286 50.4) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005ec0a02e)
+  (gr_text "nRFMicro 1.4.x" (at 27.74286 50.4) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005ec0a02e)
     (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
   )
 
