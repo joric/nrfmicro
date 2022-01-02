@@ -35,3 +35,14 @@ jobs:
           asset_path: ./gerbers/nrfmicro-front.png
           asset_name: nrfmicro-front.png
           asset_content_type: image/png
+
+      - name: Upload release binary2
+        uses: actions/upload-release-asset@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
+          asset_path: ./gerbers/nrfmicro-back.png
+          asset_name: nrfmicro-back.png
+          asset_content_type: image/png
+
