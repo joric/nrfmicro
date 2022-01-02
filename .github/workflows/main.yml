@@ -17,4 +17,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: nrfmicro-gerbers
-          path: gerbers/gerber
+          path: gerbers
