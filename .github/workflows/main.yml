@@ -20,20 +20,14 @@ jobs:
           name: nrfmicro-gerbers
           path: gerbers
 
-      - name: Get upload URL
-        id: geturl
-        run:   |
-               upload_url=$(curl -sL https://api.github.com/repos/actions/checkout/releases/latest | jq -r '.upload_url')
-               echo UPLOAD_URL=$upload_url >> $GITHUB_ENV
-        shell: bash
+      - name: Get release
+        id: get_release
+        uses: jossef/action-latest-release-info@v1.1.0
 
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload release binary
+        uses: actions/upload-release-asset@v1.0.2
         with:
-          upload_url: ${{ env.UPLOAD_URL }}
+          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/nrfmicro-front.png
           asset_name: nrfmicro-front.png
           asset_content_type: image/png
