@@ -2880,7 +2880,7 @@
     (pin "1" (uuid b8d00b2a-65bc-41d9-a9e1-60d204ac65ff))
   )
 
-  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 100.33 25.4 0) (mirror y) (unit 1)
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 100.33 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9421d72d-6c35-45b9-bec5-28812acbfa17)
     (property "Reference" "JP1" (id 0) (at 100.33 19.05 0))
