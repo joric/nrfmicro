@@ -33,6 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: "${{ env.UPLOAD_URL }}"
-          asset_path: $GITHUB_WORKSPACE/gerbers/nrfmicro-front.png
+          asset_path: gerbers/nrfmicro-front.png
           asset_name: nrfmicro-front.png
           asset_content_type: image/png
