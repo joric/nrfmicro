@@ -1397,7 +1397,7 @@
     (pad "S1" thru_hole oval (at -5.5803 -0.5) (size 1 1.8) (drill oval 0.6 1.4) (layers *.Cu *.Mask "F.Paste")
       (net 1 "GND") (tstamp 9a9f2d82-f64d-4264-8bec-c182528fc4de))
     (model "${KIPRJMOD}/nrfmicro.pretty/3d/USB-C-C168688.step"
-      (offset (xyz 0 0 0))
+      (offset (xyz 0 6.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
     )
