@@ -1139,7 +1139,7 @@
       (effects (font (size 0.7 0.7) (thickness 0.08)))
       (tstamp 0c3dceba-7c95-4b3d-b590-0eb581444beb)
     )
-    (fp_text value "XC6220B331MR-G" (at -3.099 1.397 180) (layer "F.Fab")
+    (fp_text value "XC6220B331MR-G" (at -4.185 -1.971 180) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 965308c8-e014-459a-b9db-b8493a601c62)
     )
