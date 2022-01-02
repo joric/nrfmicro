@@ -11,7 +11,7 @@ jobs:
       - name: Export Gerbers
         uses: ./.github/actions/export-gerbers
         with:
-          pcb_file: nrfmicro.kicad_pcb
+          pcb_file: hardware/nrfmicro.kicad_pcb
           gerbers_dir: gerbers
       - name: Persist output
         uses: actions/upload-artifact@v2
