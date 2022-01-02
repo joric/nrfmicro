@@ -1,0 +1,24 @@
+name: 'Export Gerbers'
+description: 'Export Gerber files from a Kicad PCB'
+inputs:
+  pcb_file:
+    description: 'Kicad input file'
+    required: true
+  gerbers_dir:
+    description: 'Gerbers folder'
+    required: true
+  fab:
+    description: 'Fabrication profile'
+    default: 'jlcpcb'
+  flags:
+    description: 'Additional flags for kikit fab'
+    default: '--no-assembly'
+runs:
+  using: 'docker'
+  image: 'docker://yaqwsx/kikit:v0.7'
+  entrypoint: '/bin/sh'
+  args:
+    - '-c'
+    - |
+      mkdir -p $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
+      kikit fab ${{ inputs.fab }} ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}

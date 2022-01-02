@@ -1,0 +1,20 @@
+on: [push, pull_request, workflow_dispatch]
+
+name: Build
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    name: Generate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Export Gerbers
+        uses: ./.github/actions/export-gerbers
+        with:
+          pcb_file: nrfmicro.kicad_pcb
+          gerbers_dir: gerbers
+      - name: Persist output
+        uses: actions/upload-artifact@v2
+        with:
+          name: nrfmicro
+          path: gerbers
