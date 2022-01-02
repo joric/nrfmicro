@@ -33,7 +33,7 @@ jobs:
         with:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: ./gerbers/nrfmicro-front.png
+          asset_path: ./gerbers/nrfmicro-devel-front.png
 
       - name: Upload release binary2
         uses: shogo82148/actions-upload-release-asset@v1
@@ -42,7 +42,7 @@ jobs:
         with:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
-          asset_path: ./gerbers/nrfmicro-back.png
+          asset_path: ./gerbers/nrfmicro-devel-back.png
 
       - name: Upload gerbers
         uses: shogo82148/actions-upload-release-asset@v1
@@ -52,4 +52,4 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/gerbers.zip
-          asset_name: nrfmicro-latest-gerbers.zip
+          asset_name: nrfmicro-devel-gerbers.zip

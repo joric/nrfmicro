@@ -22,6 +22,6 @@ runs:
     - |
       mkdir -p $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       kikit fab ${{ inputs.fab }} ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
-      pcbdraw --dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/nrfmicro-front.png ;
-      pcbdraw --dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json --back $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/nrfmicro-back.png ;
+      pcbdraw --dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/nrfmicro-devel-front.png ;
+      pcbdraw --dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json --back $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/nrfmicro-devel-back.png ;
 
