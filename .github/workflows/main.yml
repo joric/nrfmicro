@@ -21,6 +21,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
       - name: Upload front
+        if: ${{ steps.latest_release_info.outputs.upload_url }} == null
+        run: exit 0
         uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -31,6 +33,8 @@ jobs:
           asset_name: nrfmicro-latest-front.png
 
       - name: Upload back
+        if: ${{ steps.latest_release_info.outputs.upload_url }} == null
+        run: exit 0
         uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -41,6 +45,8 @@ jobs:
           asset_name: nrfmicro-latest-back.png
 
       - name: Upload gerbers
+        if: ${{ steps.latest_release_info.outputs.upload_url }} == null
+        run: exit 0
         uses: shogo82148/actions-upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
