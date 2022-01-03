@@ -12,10 +12,10 @@ inputs:
     default: 'jlcpcb'
   flags:
     description: 'Additional flags for kikit fab'
-    default: '--no-assembly'
+    default: '--no-assembly --no-drc'
   draw:
     description: 'PCBDraw options'
-    default: '--dpi 800 --filter "" --style builtin:set-blue-enig.json'
+    default: '--dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json'
 runs:
   using: 'docker'
   image: 'docker://yaqwsx/kikit:nightly'
@@ -24,7 +24,7 @@ runs:
     - '-c'
     - |
       mkdir -p $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
-      kikit fab ${{ inputs.fab }} --no-assembly --no-drc  ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
+      kikit fab ${{ inputs.fab }} ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       pcbdraw ${{ inputs.draw }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/front.png ;
       pcbdraw --back ${{ inputs.draw }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/back.png ;
 #     kikit present boardpage gerbers --description $GITHUB_WORKSPACE/README.md --board "" "" $GITHUB_WORKSPACE/${{ inputs.pcb_file }} --name myname
