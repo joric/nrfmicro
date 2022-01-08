@@ -17,6 +17,7 @@ jobs:
       - name: Set Variables
         run: |
           echo "prefix=${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}" >> $GITHUB_ENV
+          echo ${{ env.prefix }}
 
       - name: Gets latest created release info
         id: latest_release_info
