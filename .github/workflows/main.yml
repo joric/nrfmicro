@@ -14,6 +14,11 @@ jobs:
           pcb_file: hardware/nrfmicro.kicad_pcb
           gerbers_dir: gerbers
 
+      - name: Vars
+        run: |
+          echo "repository: ${GITHUB_REPOSITORY#*/}"
+          echo "branch: ${GITHUB_REF##*/}"
+
       - name: Gets latest created release info
         id: latest_release_info
         uses: jossef/action-latest-release-info@v1.1.0
@@ -49,21 +54,3 @@ jobs:
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/gerbers.zip
           asset_name: nrfmicro-latest-gerbers.zip
-
-      - name: Upload artifacts 1
-        uses: actions/upload-artifact@v2
-        with:
-          name: gerbers.zip
-          path: ./gerbers/gerbers.zip
-
-      - name: Upload artifacts 2
-        uses: actions/upload-artifact@v2
-        with:
-          name: front.png
-          path: ./gerbers/front.png
-
-      - name: Upload artifacts 3
-        uses: actions/upload-artifact@v2
-        with:
-          name: back.png
-          path: ./gerbers/back.png
