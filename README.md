@@ -1,9 +1,9 @@
 # nRFMicro
 
 * Project wiki: https://github.com/joric/nrfmicro/wiki
-* Latest gerbers: [nrfmicro-latest-gerbers.zip](../../releases/latest/download/nrfmicro-latest-gerbers.zip)
+* Latest gerbers: [nrfmicro-main-gerbers.zip](../../releases/latest/download/nrfmicro-main-gerbers.zip)
 
 front|back
 --|--
-![front](../../releases/latest/download/nrfmicro-latest-front.png)|![back](../../releases/latest/download/nrfmicro-latest-back.png)
+![front](../../releases/latest/download/nrfmicro-main-front.png)|![back](../../releases/latest/download/nrfmicro-main-back.png)
 
