@@ -9,7 +9,7 @@ jobs:
       - name: Set Variables
         run: |
           echo "prefix=${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}" >> $GITHUB_ENV
-          echo ${{ env.prefix }}
+          echo "${{ env.prefix }}"
 
       - name: Checkout
         uses: actions/checkout@v2
