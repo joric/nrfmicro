@@ -14,11 +14,6 @@ jobs:
           pcb_file: hardware/nrfmicro.kicad_pcb
           gerbers_dir: gerbers
 
-      - name: Vars
-        run: |
-          echo "repository: ${GITHUB_REPOSITORY#*/}"
-          echo "branch: ${GITHUB_REF##*/}"
-
       - name: Gets latest created release info
         id: latest_release_info
         uses: jossef/action-latest-release-info@v1.1.0
@@ -33,7 +28,7 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/front.png
-          asset_name: ${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-front.png
+          asset_name: "${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-front.png"
 
       - name: Upload back
         uses: shogo82148/actions-upload-release-asset@v1
@@ -43,7 +38,7 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/back.png
-          asset_name: ${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-back.png
+          asset_name: "${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-back.png"
 
       - name: Upload gerbers
         uses: shogo82148/actions-upload-release-asset@v1
@@ -53,4 +48,4 @@ jobs:
           overwrite: true
           upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ./gerbers/gerbers.zip
-          asset_name: ${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-gerbers.zip
+          asset_name: "${GITHUB_REPOSITORY#*/}-${GITHUB_REF##*/}-gerbers.zip"
