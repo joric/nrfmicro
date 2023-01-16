@@ -15,10 +15,10 @@ inputs:
     default: '--no-assembly --no-drc'
   draw:
     description: 'PCBDraw options'
-    default: 'plot --dpi 800 --filter ""'
+    default: '--dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json'
 runs:
   using: 'docker'
-  image: 'docker://yaqwsx/kikit:nightly'
+  image: 'docker://yaqwsx/kikit:v1.0.0'
   entrypoint: '/bin/sh'
   args:
     - '-c'
@@ -26,5 +26,5 @@ runs:
       mkdir -p $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       kikit fab ${{ inputs.fab }} ${{ inputs.flags }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }} ;
       pcbdraw ${{ inputs.draw }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/front.png ;
-      pcbdraw ${{ inputs.draw }} --side back $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/back.png ;
+      pcbdraw --back ${{ inputs.draw }} $GITHUB_WORKSPACE/${{ inputs.pcb_file }} $GITHUB_WORKSPACE/${{ inputs.gerbers_dir }}/back.png ;
 #     kikit present boardpage gerbers --description $GITHUB_WORKSPACE/README.md --board "" "" $GITHUB_WORKSPACE/${{ inputs.pcb_file }} --name myname
