@@ -15,7 +15,7 @@ inputs:
     default: '--no-assembly --no-drc'
   draw:
     description: 'PCBDraw options'
-    default: 'plot --dpi 800 --filter "" --style builtin:jlcpcb-green-enig.json'
+    default: 'plot --dpi 800 --filter ""'
 runs:
   using: 'docker'
   image: 'docker://yaqwsx/kikit:nightly'
