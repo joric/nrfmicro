@@ -1006,7 +1006,7 @@
       (effects (font (size 0.7 0.7) (thickness 0.08)))
       (tstamp 1171ce37-6ad7-4662-bb68-5592c945ebf3)
     )
-    (fp_text value "RPROG" (at 4.318 -0.508) (layer "F.Fab")
+    (fp_text value "10K" (at 4.318 -0.508) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d4c9471f-7503-4339-928c-d1abae1eede6)
     )
